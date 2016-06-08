@@ -1,0 +1,11 @@
+{
+  "name": "appleinn-api",
+  "version": "1.0.0",
+  "description": "The AppleInn-API is the code of API RESTFULL",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Eduardo Hattori | Guilherme Filipe | Daniel Freitas | Filipe Isaac",
+  "license": "ISC"
+}
