@@ -3,9 +3,24 @@
   "version": "1.0.0",
   "description": "The AppleInn-API is the code of API RESTFULL",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eHattori/appleInn"
+  },
   "scripts": {
     "test": "npm test"
   },
   "author": "Eduardo Hattori | Guilherme Filipe | Daniel Freitas | Filipe Isaac",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
+    "config3": "^1.0.0",
+    "consign": "^0.1.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "mocha": "^2.5.3",
+    "passport": "^0.3.2",
+    "passport-http-bearer": "^1.0.1"
+  }
 }
