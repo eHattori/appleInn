@@ -12,7 +12,6 @@ module.exports = function(app){
         get : function(req, res) {
             res.json({ username: "Eduardo", email: "eduardo.hattori@hotmail.com" });
         }
-
     };
 
     return userController;
