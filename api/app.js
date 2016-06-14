@@ -20,10 +20,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 
 consign()
-    .then('modulos/domains')
-    .then('modulos/helpers')
     .then('modulos/infra')
     .then('modulos/models')
+    .then('modulos/domains')
+    .then('modulos/helpers')
     .then('modulos/controllers')
     .then('routes')
     .into(app);
@@ -33,8 +33,3 @@ app.listen(config.port, function(){
 });
 
 module.exports = app;
-
-
-
-
-
