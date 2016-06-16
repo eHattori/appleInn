@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.1",
+    "bunyan": "^1.8.1",
     "compression": "^1.6.2",
     "config3": "^1.0.0",
     "consign": "^0.1.2",

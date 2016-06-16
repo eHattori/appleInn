@@ -9,6 +9,9 @@ module.exports = function(app){
     var auth           = app.modulos.helpers.authHelper;
     var userController = app.modulos.controllers.userController;
 
+    var log = app.modulos.helpers.logHelper;
+
+    log.info('oi');
 
     app.all('/');
 

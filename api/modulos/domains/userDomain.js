@@ -7,7 +7,6 @@
 
 module.exports = function(app){
 
-    var sequelize    = (app.modulos.infra.postgresInfra).getConnection();
     var usuarioModel = app.modulos.models.userModel;
 
     var userDomain = {
