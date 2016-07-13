@@ -19,6 +19,14 @@ app.use(cors({credentials : true}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 
+//Seta Configuração
+config.postgres.database = process.env.DATABASE;
+config.postgres.username = process.env.USERNAME;
+config.postgres.password = process.env.PASSWORD;
+config.postgres.host     = process.env.HOST;
+config.postgres.port     = process.env.PORT;
+
+
 consign()
     .then('modulos/infra')
     .then('modulos/models')

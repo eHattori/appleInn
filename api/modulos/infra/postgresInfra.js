@@ -28,6 +28,7 @@ module.exports = function(app){
                         {
                             host   : config.postgres.host,
                             port   : config.postgres.port,
+
                             dialect: 'postgres',
                             define : {
                                 freezeTableName: true,
