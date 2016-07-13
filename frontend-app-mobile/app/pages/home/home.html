@@ -1,8 +1,36 @@
 <ion-content class="card-background-page">
 
-  <ion-card>
-  <img src="img/nin-live.png"/>
-  <ion-row no-padding>
+  <ion-list>
+    <ion-card *ngFor="let room of rooms">
+      <img src="img/nin-live.png" />
+      <div class="card-title">R$ {{room.price}}</div>
+       <div class="card-subtitle">Motel: {{room.nameMotel}}</div>
+       <div class="card-subtitle2">Distancia: {{room.distance}}km</div>
+      <ion-row no-padding>
+        <ion-col>
+          <button clear small danger>
+          <ion-icon name='heart'></ion-icon>
+        </button>
+        </ion-col>
+        <ion-col text-center>
+          <button clear small danger>
+             {{room.roomName}}
+            </button>
+        </ion-col>
+        <ion-col text-right>
+          <button (tap)="goToOtherPage(room.idRoom)" clear small danger>
+          Reservar
+        </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+
+
+  <!--
+    <ion-card>
+    <img src="img/nin-live.png" />
+    <ion-row no-padding>
       <ion-col>
         <button clear small danger>
           <ion-icon name='heart'></ion-icon>
@@ -19,11 +47,11 @@
         </button>
       </ion-col>
     </ion-row>
-</ion-card>
+  </ion-card>
 
   <ion-card>
-  <img src="img/nin-live.png"/>
-  <ion-row no-padding>
+    <img src="img/nin-live.png" />
+    <ion-row no-padding>
       <ion-col>
         <button clear small danger>
           <ion-icon name='heart'></ion-icon>
@@ -40,11 +68,42 @@
         </button>
       </ion-col>
     </ion-row>
-</ion-card>
+  </ion-card>
 
   <ion-card>
-  <img src="img/nin-live.png"/>
-  <ion-row no-padding>
+    <img src="img/nin-live.png" />
+    <ion-row no-padding>
+      <ion-col>
+        <button clear small danger>
+          <ion-icon name='heart'></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button clear small danger>
+          Astúrias <ion-card>
+    <img src="img/nin-live.png" />
+    <ion-row no-padding>
+      <ion-col>
+        <button clear small danger>
+          <ion-icon name='heart'></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button clear small danger>
+          Astúrias
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button (tap)="showModal()" clear small danger>
+          <ion-icon name='log-in'></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/nin-live.png" />
+    <ion-row no-padding>
       <ion-col>
         <button clear small danger>
           <ion-icon name='heart'></ion-icon>
@@ -61,7 +120,28 @@
         </button>
       </ion-col>
     </ion-row>
-</ion-card>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/nin-live.png" />
+    <ion-row no-padding>
+      <ion-col>
+        <button clear small danger>
+          <ion-icon name='heart'></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button clear small danger>
+          Astúrias
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button clear small danger>
+          <ion-icon name='log-in'></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>-->
 
   <!--<ion-card>
   <img src="img/advance-card-bttf.png">
