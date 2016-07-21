@@ -11,12 +11,12 @@ module.exports = function(app){
 
     var log = app.modulos.helpers.logHelper;
 
-    log.info('oi');
-
     app.all('/');
 
-    app.post('/api/user/login', userController.login);
 
+    //ROUTES USER
+    app.post('/api/user', userController.create);
+    app.post('/api/user/login', userController.login);
     app.get('/api/token/valid', auth.tokenAuthenticate().authenticate('bearer', { session: false }), userController.get);
 
     //app.all('/', auth.authenticate().authenticate('bearer', { session: false }), userController.get);

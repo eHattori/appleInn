@@ -13,6 +13,11 @@ module.exports = function(app){
 
 
     var log = sequelize.define('tb_cad_log_app', {
+        id           : {
+            type: DataType.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
+        },
         name : DataType.STRING,
         hostname : DataType.STRING,
         pid : DataType.INTEGER,

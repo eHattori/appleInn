@@ -56,6 +56,30 @@ module.exports = function(app){
 
         },
 
+        /**
+         * Este método valida se o usuário é valido e envia
+         * para o dominio
+         *
+         * @author Eduardo Hattori
+         * @date 14/07/2016.
+         *
+         * @param req
+         * @param res
+         */
+        create : function(req, res){
+
+            _res = res;
+
+            var user = req.body;
+            if(userDomain.isValid(user)){
+                userDomain.save(user, function(data){
+                    callBackSucesso(data,201);
+                });
+            } else {
+                callBackError("Invalid Object","Usuário Inválido",400);
+            }
+        },
+
         get : function(req, res) {
             res.json({ username: "Eduardo", email: "eduardo.hattori@hotmail.com" });
         }
@@ -108,10 +132,7 @@ module.exports = function(app){
             user : data,
             token : token
         });
-    }
-
-
-
+    };
 
     return userController;
 }

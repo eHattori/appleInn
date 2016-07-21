@@ -21,6 +21,7 @@
     "cors": "^2.7.1",
     "elasticsearch": "^11.0.1",
     "express": "^4.13.4",
+    "md5": "^2.1.0",
     "mocha": "^2.5.3",
     "passport": "^0.3.2",
     "passport-http-bearer": "^1.0.1",
