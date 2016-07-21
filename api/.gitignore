@@ -4,3 +4,4 @@
 /config.local.js
 /*.log
 /.git/
+/coverage
