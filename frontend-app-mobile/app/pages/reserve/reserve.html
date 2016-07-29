@@ -1,15 +1,10 @@
-<!--
-  Generated template for the ReservePage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-
-
 <ion-content padding>
-  <button (click)="goBack()">
-        Cancelar
-  </button>
+
+  <ion-slides autoplay="true" pager="false" [options]="roomSlideOptions">
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" />
+    </ion-slide>
+  </ion-slides>
 
   <div>Quarto: {{roomSelected.roomName}}</div>
   <div>Motel: {{roomSelected.nameMotel}}</div>
@@ -17,4 +12,11 @@
   <div>Distancia: {{roomSelected.distance}}</div>
   <div>Mapa</div>
   <div>Efetuar Reserva</div>
+  <button (click)="goBack()">
+        Cancelar
+  </button>
+
+  <div #elementId></div>
+  
+
 </ion-content>
