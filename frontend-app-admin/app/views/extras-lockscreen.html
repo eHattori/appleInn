@@ -1,0 +1,23 @@
+<div class="center-wrapper" data-ng-controller="sessionCtrl">
+  <div class="center-content">
+    <div class="text-center">
+      <div class="lockscreen-avatar shadows">
+        <img data-ng-src="images/avatar.jpg" alt="" class="avatar avatar-lg img-circle">
+      </div>
+      <span class="center-block mt25">Welcome back, {{user.fname}} {{user.lname}}</span>
+      <small>please enter your lock code</small>
+    </div>
+    <div class="center-block lockcode">
+      <form role="form">
+        <div class="input-group mb15 mt25">
+          <input type="password" class="form-control lock-input" id="password" placeholder="enter lock code">
+          <span class="input-group-btn">
+                        <button class="btn btn-danger" type="submit" data-ng-click="submit()">
+                            Unlock
+                        </button>
+                    </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

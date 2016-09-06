@@ -1,0 +1,27 @@
+<div class="row" ng-controller="CalendarCtrl">
+  <div class="col-sm-3">
+
+    <button type="button" class="btn btn-default" data-ng-click="addEvent()">
+      <span class="fa fa-paint-brush mr5"></span>
+      <span>Add new event</span>
+    </button>
+
+    <hr>
+
+    <ul class="external-events">
+      <li ng-repeat="e in events">
+        <div class="external-event event-{{e.listColor}}">
+          <input ng-model="e.title" class="form-control no-border no-bg pl0">
+          <small>{{e.start | date:"MMM dd"}} - {{e.end | date:"MMM dd"}}</small>
+          <a class="small ml5 remove" ng-click="remove($index)">Remove</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+  <div class="col-sm-9">
+    <div class="calendar-viewer">
+      <div ui-calendar="uiConfig.calendar" class="fullcalendar" calendar="myCalendar" ng-model="eventSources"></div>
+    </div>
+  </div>
+</div>

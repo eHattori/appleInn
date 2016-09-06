@@ -1,0 +1,94 @@
+<div data-ng-controller="maskCtrl">
+  <div class="panel">
+    <div class="panel-heading border">
+      Input mask validation helpers
+    </div>
+    <div class="panel-body">
+      <form role="form">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <div>
+            <input id="date" type="text" class="form-control" placeholder="99/99/9999" ui-jq="mask" ui-options="'99/99/9999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <div>
+            <input id="phone" type="text" class="form-control" placeholder="(999) 999-9999" ui-jq="mask" ui-options="'(999) 999-9999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneExt">Phone + Ext</label>
+          <div>
+            <input id="phoneExt" type="text" class="form-control" placeholder="(999) 999-9999? x99999" ui-jq="mask" ui-options="'(999) 999-9999? x99999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="iphone">Int'l Phone</label>
+          <div>
+            <input id="iphone" type="text" class="form-control" placeholder="+33 999 999 999" ui-jq="mask" ui-options="'+33 999 999 999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tin">Tax ID</label>
+          <div>
+            <input id="tin" type="text" class="form-control" placeholder="99-9999999" ui-jq="mask" ui-options="'99-9999999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ssn">SSN</label>
+          <div>
+            <input id="ssn" type="text" class="form-control" placeholder="999-99-9999" ui-jq="mask" ui-options="'999-99-9999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="product">Product Key</label>
+          <div>
+            <input id="product" type="text" class="form-control" placeholder="a*-999-a999" ui-jq="mask" ui-options="'a*-999-a999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="eyescript">Eye Script</label>
+          <div>
+            <input id="eyescript" type="text" class="form-control" placeholder="~9.99 ~9.99 999" ui-jq="mask" ui-options="'~9.99 ~9.99 999'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="po">Purchase Order</label>
+          <div>
+            <input id="po" type="text" class="form-control" placeholder="aaa-999-***" ui-jq="mask" ui-options="'PO: aaa-999-***'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pct">Percent</label>
+          <div>
+            <input id="pct" type="text" class="form-control" placeholder="99%" ui-jq="mask" ui-options="'99%'" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneAutoclearFalse">Phone (autoclear=false)</label>
+          <div>
+            <input id="phoneAutoclearFalse" type="text" class="form-control" placeholder="(999) 999-9999" ui-jq="mask" ui-options="'(999) 999-9999', maskOpt" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneExtAutoclearFalse">Phone + Ext (autoclear=false)</label>
+          <div>
+            <input id="phoneExtAutoclearFalse" type="text" class="form-control" placeholder="(999) 999-9999? x99999" ui-jq="mask" ui-options="'(999) 999-9999? x99999', maskOpt" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div data-ng-controller="rickshawCtrl">
+  <div class="row mb25">
+    <div class="col-xs-12">
+      <div class="panel">
+        <div class="panel-heading border">
+          Time on the X-Axis
+        </div>
+        <div class="panel-body">
+          <rickshaw class="rickshaw_graph" rickshaw-options="options1" rickshaw-features="features1" rickshaw-series="series1"></rickshaw>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel">
+        <div class="panel-heading border">
+          X-Axis and Y-Axis
+        </div>
+        <div class="panel-body">
+          <rickshaw class="rickshaw-chart rickshaw_graph" rickshaw-options="options2" rickshaw-features="features2" rickshaw-series="series2"></rickshaw>
+          <div class="chart_container">
+            <div class="y_axis" id="y_axis"></div>
+            <div class="rickshaw-chart" id="chart2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

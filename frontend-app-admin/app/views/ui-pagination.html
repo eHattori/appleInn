@@ -1,0 +1,34 @@
+<div class="row" ng-controller="PaginationDemoCtrl">
+  <div class="col-sm-6">
+    <div class="panel">
+      <div class="panel-heading border">Pagination variants</div>
+      <div class="panel-body">
+        <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()" class="pagination-lg"></pagination>
+        <br/>
+        <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+        <br/>
+        <pagination direction-links="false" boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm"></pagination>
+        <br/>
+        <pagination direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages" class="pagination-sm"></pagination>
+        <br/>
+        <pre>The selected page no: {{currentPage}}</pre>
+        <button class="btn btn-info" ng-click="setPage(3)">Set current page to: 3</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="panel">
+      <div class="panel-heading border">Limit the maximum visible buttons</div>
+      <div class="panel-body">
+        <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" boundary-links="true"></pagination>
+        <br/>
+        <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+        <br/>
+        <pre>Page: {{bigCurrentPage}} / {{numPages}}</pre>
+        <br/>
+        <p>Pagers</p>
+        <pager total-items="bigTotalItems" ng-model="bigCurrentPage"></pager>
+      </div>
+    </div>
+  </div>
+</div>

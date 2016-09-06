@@ -1,0 +1,16 @@
+{
+  "port" : 3000,
+  "mysql": {
+    "database" : "appleinndb",
+    "username" : "appleinn",
+    "password" : "!appleinn!",
+    "host"     : "localhost",
+    "port"     : 3306
+  },
+  "elasticsearch" : {
+    "host" : "localhost:9200",
+    "log"  : "error",
+    "index": "userid",
+    "type" : "usertype"
+  }
+}

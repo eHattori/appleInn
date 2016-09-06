@@ -1,0 +1,66 @@
+<div class="panel" data-ng-controller="validationCtrl">
+  <div class="panel-heading border">
+    Input validation helpers
+  </div>
+  <div class="panel-body">
+    <form role="form" ui-jq="validate" ui-options="validationOpt">
+
+      <div class="form-group mb25">
+        <p>Required | minimum length 5 characters</p>
+        <div>
+          <input type="text" class="form-control" name="name" placeholder="Required | minimum length 5 characters" required minlength="5">
+        </div>
+      </div>
+
+      <div class="form-group mb25">
+        <p>Required | valid email format</p>
+        <div>
+          <input type="email" class="form-control" name="email" placeholder="Required | valid email format" required>
+        </div>
+      </div>
+
+      <div class="form-group mb25">
+        <p>Required | valid url format</p>
+        <div>
+          <input type="url" class="form-control" name="url" placeholder="Required | valid url format" required>
+        </div>
+      </div>
+
+      <div class="form-group mb25">
+        <p>Required | number</p>
+        <div>
+          <input type="number" class="form-control" name="number" placeholder="Required | number" required>
+        </div>
+      </div>
+
+      <div class="form-group mb25">
+        <p>Required | number | min 10</p>
+        <div>
+          <input type="number" min="10" class="form-control" name="number-min" placeholder="Required | number | min 10" required>
+        </div>
+      </div>
+
+      <div class="form-group mb25">
+        <p>Required | number | max 10</p>
+        <div>
+          <input type="number" max="10" class="form-control" name="number-min" placeholder="Required | number | max 10" required>
+        </div>
+      </div>
+
+      <div class="form-group mb25">
+        <p>Required | number | min 0 | max 100</p>
+        <div>
+          <input type="number" min="0" max="100" class="form-control" name="number-min" placeholder="Required | number | min 0 | max 100" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label></label>
+        <div>
+          <button class="btn btn-primary mr10">Submit</button>
+          <button class="btn btn-default">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

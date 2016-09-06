@@ -1,0 +1,28 @@
+<div class="panel">
+  <div class="panel-heading border">
+    Progress bar variants
+  </div>
+  <div class="panel-body">
+    <progressbar value="20"></progressbar>
+    <br/>
+    <progressbar value="40" type="info"></progressbar>
+    <br/>
+    <progressbar value="60" type="success"></progressbar>
+    <br/>
+    <progressbar value="80" type="warning"></progressbar>
+    <br/>
+    <progressbar value="90" type="danger"></progressbar>
+    <br/>
+    <p>Striped Progress Bars</p>
+    <progressbar value="40" type="success" class="progress-striped mb25"></progressbar>
+    <br/>
+    <p>Active Progress Bar</p>
+    <progressbar value="50" type="info" class="progress-striped active mb25"></progressbar>
+    <br/>
+    <p>Stacked Progress Bars</p>
+    <progress>
+      <bar ng-repeat="bar in stacked track by $index" value="bar.value" type="{{bar.type}}"><span ng-hide="bar.value < 5">{{bar.value}}%</span>
+      </bar>
+    </progress>
+  </div>
+</div>

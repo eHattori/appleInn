@@ -1,0 +1,61 @@
+<div class="panel" data-ng-controller="NotificationsCtrl">
+  <div class="panel-heading border">
+    Noty notifications
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="controls inline w300 checkbo mb25 mr30">
+          <label class="control-label" for="message">Message</label>
+          <textarea class="form-control mb25" id="message" rows="2" placeholder="Enter a message ..."></textarea>
+          <label class="control-label" for="message">Type</label>
+          <div class="mb25">
+            <select class="chosen-select" id="messenger-type" style="width: 100%;" ui-jq="chosen" ui-options="{disable_search_threshold: 10}">
+              <option>Information</option>
+              <option>Success</option>
+              <option>Error</option>
+              <option>Warning</option>
+              <option>Confirm</option>
+            </select>
+          </div>
+          <a href="javascript:;" class="btn btn-primary" data-ng-click="showNoty()">
+            <span>Show me</span>
+          </a>
+        </div>
+
+        <ul class="inline location-selector w300">
+          <li class="bit top left" data-ng-click="selectLocation('topLeft', $event)">
+            <div>
+              <span>Top left</span>
+            </div>
+          </li>
+          <li class="bit top" data-ng-click="selectLocation('top', $event)">
+            <div>
+              <span>Top</span>
+            </div>
+          </li>
+          <li class="bit top right active" data-ng-click="selectLocation('topRight', $event)">
+            <div>
+              <span>Top right</span>
+            </div>
+          </li>
+          <li class="bit bottom left" data-ng-click="selectLocation('bottomLeft', $event)">
+            <div>
+              <span>Bottom left</span>
+            </div>
+          </li>
+          <li class="bit bottom" data-ng-click="selectLocation('bottom', $event)">
+            <div>
+              <span>Bottom</span>
+            </div>
+          </li>
+          <li class="bit bottom right" data-ng-click="selectLocation('bottomRight', $event)">
+            <div>
+              <span>Bottom right</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

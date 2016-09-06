@@ -2,16 +2,242 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d2aed1c-6886-481b-a9a5-8ea0b8d78e3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/test/logHelperTest.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/coverage.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/app.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/controllers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/controllers/userController.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/domains/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/domains/logDomain.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/domains/tokenDomain.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/domains/userDomain.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/helpers/authHelper.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/helpers/logHelper.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/infra/elasticsearchInfra.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/infra/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/infra/postgresInfra.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/models/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/models/logModel.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/modulos/models/userModel.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/routes/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/api/routes/routes.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/sort-arrow-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov-report/sorter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/coverage/lcov.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/controllers/userController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/domains/logDomain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/domains/tokenDomain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/domains/userDomain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/helpers/authHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/helpers/logHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/infra/elasticsearchInfra.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/infra/postgresInfra.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/models/logModel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/modulos/models/userModel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/test/connectionEnviromentTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/test/logHelperTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/test/quartoTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/test/userControllerTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/admin/.bootstraprc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-568h@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-667h.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-667h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-736h.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Landscape-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Landscape@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Landscape~ipad.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Landscape~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Portrait@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default-Portrait~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default@2x~iphone.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default~iphone.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/splash/Default~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-alaska.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-alaska.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-bttf.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-bttf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-jp.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-jp.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-london.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-london.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-machu-picchu-1.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-machu-picchu-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-map-madison.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-map-madison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-map-mario.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-map-mario.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-map-paris.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-map-paris.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-tmntr.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/advance-card-tmntr.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/android-statusbar.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/android-statusbar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ben.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ben.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-finn.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-finn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-frodo.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-frodo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-gollum.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-gollum.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-han.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-han.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-leia.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-leia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-luke.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-luke.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-poe.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-poe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-rey.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-rey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-samwise.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-samwise.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-barbie.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-barbie.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-bopeep.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-bopeep.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-bullseye.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-bullseye.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-buzz.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-buzz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-hamm.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-hamm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-jessie.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-jessie.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-potatohead.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-potatohead.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-rex.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-rex.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-sarge.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-sarge.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-slinky.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-slinky.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-squeeze.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-squeeze.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-woody.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-ts-woody.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-yoda.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/avatar-yoda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/badu-live.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/badu-live.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/barrett.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/barrett.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/bjork-live.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/bjork-live.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-amsterdam.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-amsterdam.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-madison.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-madison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-portland.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-portland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-saopaolo.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-saopaolo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-sf.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-sf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-wireframe.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/card-wireframe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-hdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-ldpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-mdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-xhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-xxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-hdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-ldpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-mdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-xhdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-xhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-xxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/footer-wireframe.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/footer-wireframe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-1.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-3.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-1.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-2.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-3.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-4.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-5.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ghost-buster-5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/gozer.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/gozer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ian-avatar.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ian-avatar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-1.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-2.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-3.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-4.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ica-slidebox-img-4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-40.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-40@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-40@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-50.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-50@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-50@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-60.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-60@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-60@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-60@3x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-60@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-72.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-72@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-72@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-76.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-76@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-76@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-small.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-small@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-small@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-small@3x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon-small@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon@2x.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/ios/icon/icon@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/img-icon.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/img-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/ios-statusbar.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/ios-statusbar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/marshmallow-man.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/marshmallow-man.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/marty-avatar.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/marty-avatar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/nin-live.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/nin-live.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/queen-live.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/queen-live.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/rundmc-live.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/rundmc-live.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/sarah-avatar.png.jpeg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/sarah-avatar.png.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/slimer.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/slimer.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/spengler.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/spengler.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/resources/splash.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/resources/splash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/stantz.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/stantz.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/modelagem/temquarto.png" afterPath="$PROJECT_DIR$/database/modelagem/temquarto.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-batman.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-batman.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-bttf.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-bttf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-1.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-2.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-3.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-4.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-duckling-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-esb.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-esb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-ghostbusters.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-ghostbusters.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-1.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-2.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-3.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-4.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-kitten-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-1.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-2.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-3.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-4.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-puppy-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-rotla.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-rotla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-terminator.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-terminator.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-totoro.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/thumbnail-totoro.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/tully.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/tully.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/venkman.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/venkman.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/winston.jpg" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/winston.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/wp-statusbar.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/wp-statusbar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/img/zuul.png" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/img/zuul.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/.gitignore" afterPath="$PROJECT_DIR$/frontend-app-mobile/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker/postgres/Dockerfile" afterPath="$PROJECT_DIR$/docker/postgres/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/README.md" afterPath="$PROJECT_DIR$/api/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/hooks/README.md" afterPath="$PROJECT_DIR$/frontend-app-mobile/hooks/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/alter_add_fks.ddl.sql" afterPath="$PROJECT_DIR$/database/scripts/alter_add_fks.ddl.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.core.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.ios.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.ios.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app.js" afterPath="$PROJECT_DIR$/api/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/test/connectionEnviromentTest.js" afterPath="$PROJECT_DIR$/api/test/connectionEnviromentTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modulos/models/logModel.js" afterPath="$PROJECT_DIR$/api/modulos/models/logModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.md.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.md.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/app.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/app.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.variables.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.wp.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/theme/app.wp.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/appleInn.iml" afterPath="$PROJECT_DIR$/.idea/appleInn.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/config.xml" afterPath="$PROJECT_DIR$/frontend-app-mobile/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/.vscode/typings/cordova/cordova.d.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/.vscode/typings/cordova/cordova.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/details/details.html" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/details/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/details/details.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/details/details.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/details/details.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/details/details.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/gulpfile.js" afterPath="$PROJECT_DIR$/frontend-app-mobile/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/home/home.html" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/home/home.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/home/home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/home/home.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/home/home.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/typings/index.d.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/typings/index.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/typings/globals/es6-shim/index.d.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/typings/globals/es6-shim/index.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/www/index.html" afterPath="$PROJECT_DIR$/frontend-app-mobile/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/ionic.config.json" afterPath="$PROJECT_DIR$/frontend-app-mobile/ionic.config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/modelagem/modelo_temquarto.dbm" afterPath="$PROJECT_DIR$/database/modelagem/modelo_temquarto.dbm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/motel.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/motel.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/package.json" afterPath="$PROJECT_DIR$/api/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modulos/infra/postgresInfra.js" afterPath="$PROJECT_DIR$/api/modulos/infra/postgresInfra.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker/package.json" afterPath="$PROJECT_DIR$/docker/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/package.json" afterPath="$PROJECT_DIR$/frontend-app-mobile/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/reserve/reserve.html" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/reserve/reserve.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/reserve/reserve.scss" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/reserve/reserve.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/app/pages/reserve/reserve.ts" afterPath="$PROJECT_DIR$/frontend-app-mobile/app/pages/reserve/reserve.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/routes.js" afterPath="$PROJECT_DIR$/api/routes/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modulos/controllers/userController.js" afterPath="$PROJECT_DIR$/api/modulos/controllers/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/test/userControllerTest.js" afterPath="$PROJECT_DIR$/api/test/userControllerTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modulos/domains/userDomain.js" afterPath="$PROJECT_DIR$/api/modulos/domains/userDomain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/sq_nivel_permissao.ddl" afterPath="$PROJECT_DIR$/database/scripts/sq_nivel_permissao.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_conta_corrente.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_cad_conta_corrente.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_moteis.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_cad_moteis.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_quartos.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_cad_quartos.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_status_transacao.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_cad_status_transacao.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_usuario.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_cad_usuario.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_usuario_app.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_cad_usuario_app.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_nivel_permissao.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_nivel_permissao.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/scripts/tb_reserva_uapp.ddl" afterPath="$PROJECT_DIR$/database/scripts/tb_reserva_uapp.ddl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/tsconfig.json" afterPath="$PROJECT_DIR$/frontend-app-mobile/tsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/typings.json" afterPath="$PROJECT_DIR$/frontend-app-mobile/typings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-mobile/typings/globals/es6-shim/typings.json" afterPath="$PROJECT_DIR$/frontend-app-mobile/typings/globals/es6-shim/typings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="appleInn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,91 +258,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="userControllerTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/test/userControllerTest.js">
+      <file leaf-file-name="default.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/config/default.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgresInfra.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/modulos/infra/postgresInfra.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userDomain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/modulos/domains/userDomain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/modulos/models/userModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/modulos/controllers/userController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8172589">
-              <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.35">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -144,11 +300,18 @@
         <option value="$PROJECT_DIR$/api/test/connectionEnviromentTest.js" />
         <option value="$PROJECT_DIR$/api/modulos/models/logModel.js" />
         <option value="$PROJECT_DIR$/api/test/logHelperTest.js" />
-        <option value="$PROJECT_DIR$/api/package.json" />
         <option value="$PROJECT_DIR$/api/routes/routes.js" />
         <option value="$PROJECT_DIR$/api/test/userControllerTest.js" />
         <option value="$PROJECT_DIR$/api/modulos/domains/userDomain.js" />
         <option value="$PROJECT_DIR$/api/modulos/controllers/userController.js" />
+        <option value="$PROJECT_DIR$/api/README.md" />
+        <option value="$PROJECT_DIR$/api/config/default.json" />
+        <option value="$PROJECT_DIR$/api/config/dev.json" />
+        <option value="$PROJECT_DIR$/api/config/production.json" />
+        <option value="$PROJECT_DIR$/api/config/test.json" />
+        <option value="$PROJECT_DIR$/database/tables/1-crete_table_log.sql" />
+        <option value="$PROJECT_DIR$/database/tables/2-crete_table_user.sql" />
+        <option value="$PROJECT_DIR$/api/package.json" />
       </list>
     </option>
   </component>
@@ -161,7 +324,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1366" />
+    <option name="width" value="1360" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -187,8 +350,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +378,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ddl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -235,92 +446,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modulos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modulos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appleInn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modulos" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,26 +512,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1360" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24906507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -409,30 +542,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/test/userControllerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/domains/userDomain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/models/userModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -445,31 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/controllers/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/userControllerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/domains/userDomain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -477,38 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/controllers/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/connectionEnviromentTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/infra/postgresInfra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,79 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/models/logModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/userControllerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/domains/userDomain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/controllers/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/connectionEnviromentTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/domains/userDomain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/models/userModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/models/logModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -603,98 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/connectionEnviromentTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/userControllerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/quartoTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/infra/postgresInfra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16014235">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/node_modules/sequelize/lib/sequelize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46085408">
           <caret line="734" column="26" selection-start-line="734" selection-start-column="26" selection-end-line="734" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/quartoTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/connectionEnviromentTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/helpers/logHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60913706">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/models/logModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4568528">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/domains/logDomain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09137056">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/logHelperTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4822335">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,62 +597,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/infra/postgresInfra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/models/userModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/userControllerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+        <state vertical-scroll-proportion="1.1162791">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/domains/userDomain.js">
+    <entry file="file://$PROJECT_DIR$/api/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/dev.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/modulos/controllers/userController.js">
+    <entry file="file://$PROJECT_DIR$/api/config/production.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8172589">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/ddl/1-create_database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/ddl/2-create_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/tables/1-crete_table_log.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/tables/2-crete_table_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4651163">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>

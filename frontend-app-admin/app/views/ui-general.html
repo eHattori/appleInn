@@ -1,0 +1,374 @@
+<div class="row" ui-jq="checkBo">
+  <div class="col-md-6">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel">
+          <div class="panel-heading border">
+            Ratings
+          </div>
+          <div class="panel-body">
+            <div ng-controller="RatingDemoCtrl">
+              <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+              <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+
+              <pre style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></pre>
+
+              <button class="btn btn-sm btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>
+              <button class="btn btn-sm btn-default" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
+
+              <h6>Custom icons</h6>
+              <div ng-init="x = 5">
+                <rating ng-model="x" max="15" state-on="'fa fa-circle'" state-off="'fa fa-circle-thin'"></rating> <b>(<i>Rate:</i> {{x}})</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Accordions</h5>
+        <div ng-controller="AccordionDemoCtrl">
+
+          <accordion close-others="oneAtATime" class="accordion">
+            <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+              This content is straight in the template.
+            </accordion-group>
+            <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+              {{group.content}}
+            </accordion-group>
+            <accordion-group heading="Dynamic Body Content">
+              <p>The body of the accordion group grows to fit the contents</p>
+              <button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
+              <div ng-repeat="item in items">{{item}}</div>
+            </accordion-group>
+            <accordion-group is-open="status.open">
+              <accordion-heading>
+                I can have markup, too! <i class="pull-right fa" ng-class="{'fa-angle-down': status.open, 'fa-angle-right': !status.open}"></i>
+              </accordion-heading>
+              This is just some content to illustrate fancy headings.
+            </accordion-group>
+          </accordion>
+
+          <p>
+            <button class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
+            <button class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
+          </p>
+
+          <label class="cb-checkbox">
+            <input type="checkbox" ng-model="oneAtATime">Open only one at a time
+          </label>
+
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Alerts</h5>
+
+        <div ng-controller="AlertDemoCtrl">
+          <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+          <button class='btn btn-default btn-sm' ng-click="addAlert()">Add Alert</button>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <div class="panel">
+          <div class="panel-heading border">
+            Buttons
+          </div>
+          <div class="panel-body">
+            <div ng-controller="ButtonsCtrl">
+              <p>Single toggle</p>
+              <pre>{{singleModel}}</pre>
+              <button type="button" class="btn btn-primary btn-sm" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+                Single Toggle
+              </button>
+              <h6>Checkbox</h6>
+              <pre>{{checkModel}}</pre>
+              <div class="btn-group">
+                <label class="btn btn-primary btn-sm" ng-model="checkModel.left" btn-checkbox>Left</label>
+                <label class="btn btn-primary btn-sm" ng-model="checkModel.middle" btn-checkbox>Middle</label>
+                <label class="btn btn-primary btn-sm" ng-model="checkModel.right" btn-checkbox>Right</label>
+              </div>
+              <h6>Radio &amp; Uncheckable Radio</h6>
+              <pre>{{radioModel || 'null'}}</pre>
+              <div class="btn-group">
+                <label class="btn btn-primary btn-sm" ng-model="radioModel" btn-radio="'Left'">Left</label>
+                <label class="btn btn-primary btn-sm" ng-model="radioModel" btn-radio="'Middle'">Middle</label>
+                <label class="btn btn-primary btn-sm" ng-model="radioModel" btn-radio="'Right'">Right</label>
+              </div>
+              <div class="btn-group">
+                <label class="btn btn-success btn-sm" ng-model="radioModel" btn-radio="'Left'" uncheckable>Left</label>
+                <label class="btn btn-success btn-sm" ng-model="radioModel" btn-radio="'Middle'" uncheckable>Middle</label>
+                <label class="btn btn-success btn-sm" ng-model="radioModel" btn-radio="'Right'" uncheckable>Right</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <div class="panel">
+          <div class="panel-body">
+            <div ng-controller="CarouselDemoCtrl">
+
+              <carousel interval="myInterval" class="mb15">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                  <img data-ng-src="{{slide.image}}" style="margin:auto;">
+                  <div class="carousel-caption">
+                    <h4>Slide {{$index}}</h4>
+                    <p>{{slide.text}}</p>
+                  </div>
+                </slide>
+              </carousel>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-info btn-sm" ng-click="addSlide()">Add Slide</button>
+                </div>
+                <div class="col-md-6">
+                  <input type="number" class="form-control input-sm" ng-model="myInterval">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Modal</h5>
+        <div ng-controller="ModalDemoCtrl">
+          <button class="btn btn-default btn-sm" ng-click="open()">Open modal!</button>
+          <button class="btn btn-default btn-sm" ng-click="open('lg')">Open large modal</button>
+          <button class="btn btn-default btn-sm" ng-click="open('sm')">Open small modal</button>
+          <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Popovers</h5>
+        <div class="demo-button" ng-controller="PopoverDemoCtrl">
+          <button popover-placement="top" popover="On the Top!" class="btn btn-success btn-sm">Top Popover</button>
+          <button popover-placement="left" popover="On the Left!" class="btn btn-primary btn-sm">Left Popover</button>
+          <button popover-placement="right" popover="On the Right!" class="btn btn-info btn-sm">Right Popover</button>
+          <button popover-placement="bottom" popover="On the Bottom!" class="btn btn-danger btn-sm">Bottom Popover</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel">
+          <div class="panel-heading border">
+            Labels and Badges
+          </div>
+          <div class="panel-body">
+            <p>
+              <span class="label label-default">Default</span>
+              <span class="label label-primary">Primary</span>
+              <span class="label label-success">Success</span>
+              <span class="label label-info">Info</span>
+              <span class="label label-warning">Warning</span>
+              <span class="label label-danger">Danger</span>
+              <span class="label bg-purple">1</span>
+              <span class="label bg-red">2</span>
+            </p>
+            <br>
+            <p>
+              <span class="badge bg-default">4</span>
+              <span class="badge bg-primary">2</span>
+              <span class="badge bg-success">3</span>
+              <span class="badge bg-info">8</span>
+              <span class="badge bg-warning">6</span>
+              <span class="badge bg-danger">9</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="panel">
+          <div class="panel-heading border">
+            Tooltips
+          </div>
+          <div class="panel-body">
+            <div class="demo-button" ng-controller="TooltipDemoCtrl">
+              <a href="#" class="btn btn-default btn-sm" tooltip-placement="top" tooltip="On the Top!">Tooltip on top</a>
+              <a href="#" class="btn btn-primary btn-sm" tooltip-placement="right" tooltip="On the Right!">Tooltip on right</a>
+              <a href="#" class="btn btn-success btn-sm" tooltip-placement="bottom" tooltip="On the Bottom!">Tooltip on bottom</a>
+              <a href="#" class="btn btn-info btn-sm" tooltip-placement="left" tooltip="On the Left!">Tooltip on left</a>
+              <a href="#" class="btn btn-warning btn-sm" tooltip-html-unsafe="{{htmlTooltip}}">Tooltip with HTML</a>
+              <a href="#" class="btn btn-danger btn-sm" tooltip-placement="bottom" tooltip-popup-delay='1000' tooltip='appears with delay'>Tooltip with delay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Breadcrumbs</h5>
+        <ol class="breadcrumb">
+          <li>
+            <a href="javascript:;">Home</a>
+          </li>
+          <li>
+            <a href="javascript:;">UI Elements</a>
+          </li>
+          <li class="active">{{$state.current.data.title}}</li>
+        </ol>
+
+        <ol class="breadcrumb">
+          <li>
+            <a href="javascript:;"><i class="fa fa-home mr5"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="javascript:;"><i class="fa fa-toggle-on mr5"></i>Ui Elements</a>
+          </li>
+          <li class="active">{{$state.current.data.title}}</li>
+        </ol>
+
+        <ol class="breadcrumb bordered">
+          <li>
+            <a href="javascript:;">Dashboard</a>
+          </li>
+          <li>
+            <a href="javascript:;">Ui Elements</a>
+          </li>
+          <li class="active">{{$state.current.data.title}}</li>
+        </ol>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="panel">
+          <div class="panel-heading border">
+            Typeahead
+          </div>
+          <div class="panel-body">
+            <div ng-controller="TypeaheadCtrl">
+
+              <p>Static arrays</p>
+              <pre>Model: {{selected | json}}</pre>
+              <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control">
+
+              <p>Asynchronous results</p>
+              <pre>Model: {{asyncSelected | json}}</pre>
+              <input type="text" ng-model="asyncSelected" placeholder="Locations loaded via $http" typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">
+              <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+
+              <p>Custom templates for results</p>
+              <pre>Model: {{customSelected | json}}</pre>
+              <input type="text" ng-model="customSelected" placeholder="Custom template" typeahead="state as state.name for state in statesWithFlags | filter:{name:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Datepicker</h5>
+
+        <div ng-controller="DatepickerDemoCtrl">
+          <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+          <h6>Inline</h6>
+          <div class="inline">
+            <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="ui-datepicker"></datepicker>
+          </div>
+
+          <h6>Popup</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="input-group ui-datepicker">
+                <input type="text" class="form-control input-sm" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-sm" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>Format:</label>
+              <select class="form-control" ng-model="format" ng-options="f for f in formats" ui-jq="chosen" ui-options="{disable_search_threshold: 10}">
+                <option></option>
+              </select>
+            </div>
+          </div>
+
+          <hr />
+          <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+          <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+          <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+          <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <h5>Timepicker</h5>
+
+        <div ng-controller="TimepickerDemoCtrl">
+
+          <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+
+          <pre class="alert alert-info">Time is: {{mytime | date:'shortTime' }}</pre>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Hours step is:
+              <select class="form-control" ng-model="hstep" ng-options="opt for opt in options.hstep" ui-jq="chosen" ui-options="{disable_search_threshold: 10}"></select>
+            </div>
+            <div class="col-xs-6">
+              Minutes step is:
+              <select class="form-control" ng-model="mstep" ng-options="opt for opt in options.mstep" ui-jq="chosen" ui-options="{disable_search_threshold: 10}"></select>
+            </div>
+          </div>
+
+          <hr>
+
+          <button class="btn btn-info btn-sm" ng-click="toggleMode()">12H / 24H</button>
+          <button class="btn btn-default btn-sm" ng-click="update()">Set to 14:00</button>
+          <button class="btn btn-danger btn-sm" ng-click="clear()">Clear</button>
+
+        </div>
+      </div>
+
+      <div class="col-xs-12 mb15">
+        <div ng-controller="CollapseDemoCtrl">
+          <a href="javascript:;" class="btn btn-default btn-sm" ng-click="isCollapsed = !isCollapsed">Toggle collapse</a>
+          <hr>
+          <div collapse="isCollapsed">
+            <div class="well well-lg">Shattered Dremland!</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<script type="text/ng-template" id="myModalContent.html">
+  <div class="modal-header">
+    <h3 class="modal-title"> I'm a modal!</h3>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <li ng-repeat="item in items">
+        <a ng-click="selected.item = item">{{ item }}</a>
+      </li>
+    </ul>
+    Selected: <b>{{ selected.item }}</b>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary btn-sm" ng-click="ok()">OK</button>
+    <button class="btn btn-warning btn-sm" ng-click="cancel()">Cancel</button>
+  </div>
+</script>
+
+<script type="text/ng-template" id="customTemplate.html">
+  <a>
+    <img data-ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16">
+    <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+  </a>
+</script>

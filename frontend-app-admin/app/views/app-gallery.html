@@ -1,0 +1,91 @@
+<div data-ng-controller="galleryCtrl">
+  <div class="clearfix">
+    <button type="button" class="btn btn-default"><span class="fa fa-paint-brush mr5"></span>New Album</button>
+    <div class="pull-right">
+      <button type="button" class="btn btn-default btn-outline btn-xs no-border disabled"><span class="bl"></span>
+      </button>
+      <button type="button" class="btn btn-default btn-outline no-border"><span class="fa fa-cog"></span>
+      </button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default"><span class="fa fa-angle-left"></span>
+        </button>
+        <button type="button" class="btn btn-default"><span class="fa fa-angle-right"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <ul class="nav nav-stacked nav-pills mb15">
+        <li class="disabled text-uppercase">
+          <a href="javascript:;">
+            <strong>favourites</strong>
+          </a>
+        </li>
+        <li data-ng-repeat="favourite in favourites">
+          <a href="javascript:;">
+                        {{favourite.name}}
+                    </a>
+        </li>
+      </ul>
+
+      <ul class="nav nav-stacked nav-pills">
+        <li class="disabled text-uppercase">
+          <a href="javascript:;">
+            <strong>Filter</strong>
+          </a>
+        </li>
+        <li data-ng-repeat="filter in filters">
+          <a href="javascript:;">
+                        {{filter.name}}
+                    </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-9">
+      <div class="gallery">
+        <div class="col-md-3 col-sm-4 col-xs-6" data-ng-repeat="id in ran">
+          <a href="http://placeimg.com/800/440" title="Gallery Demo" data-gallery="">
+            <img data-ng-src="http://placeimg.com/600/500?{{id}}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" aria-hidden="true">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body next"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left prev">
+              <i class="fa fa-chevron-left"></i> Previous
+            </button>
+            <button type="button" class="btn btn-primary next">
+              Next
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

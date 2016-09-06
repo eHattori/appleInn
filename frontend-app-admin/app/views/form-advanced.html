@@ -1,0 +1,280 @@
+<div data-ng-controller="advancedFormCtrl">
+  <div class="panel mb25">
+    <div class="panel-heading border">
+      Custom radio inputs & checkboxes
+    </div>
+    <div class="panel-body" ui-jq="checkBo">
+      <div class="row">
+        <div class="col-sm-4 mb25">
+          <p>Checkboxes</p>
+          <label class="cb-checkbox cb-sm">
+            <input type="checkbox" name="default-checkbox-name" value="default-checkbox-val" />Default Checkbox
+          </label>
+          <br/>
+          <label class="cb-checkbox">
+            <input type="checkbox" disabled="disabled" name="disabled-checkbox-name" value="disabled-checkbox-val" />Disabled Checkbox
+          </label>
+          <br/>
+          <label class="cb-checkbox cb-md">
+            <input type="checkbox" checked="checked" name="checked-checkbox-name" value="checked-checkbox-val" />Checked Checkbox
+          </label>
+          <br/>
+          <label class="cb-checkbox cb-lg">
+            <input type="checkbox" name="default-checkbox-name" value="default-checkbox-val" />Default Checkbox
+          </label>
+        </div>
+        <div class="col-sm-4 mb25">
+          <p>Radio inputs</p>
+          <label class="cb-radio cb-sm">
+            <input type="radio" name="default-radio-name" value="default-radio-val" />Default Radio
+          </label>
+          <br/>
+          <label class="cb-radio">
+            <input type="radio" disabled="disabled" name="disabled-radio-name" value="disabled-radio-val" />Disabled Radio
+          </label>
+          <br/>
+          <label class="cb-radio cb-md">
+            <input type="radio" checked="checked" name="checked-radio-name" value="checked-radio-val" />Checked Radio
+          </label>
+          <br/>
+          <label class="cb-radio cb-lg">
+            <input type="radio" name="default-radio-name" value="default-radio-val" />Default Radio
+          </label>
+        </div>
+        <div class="col-sm-4 mb25">
+          <p>Radio group</p>
+          <label class="cb-radio">
+            <input type="radio" name="radio-group-name" value="Radio-First-val" />Group A - First
+          </label>
+          <br/>
+          <label class="cb-radio">
+            <input type="radio" name="radio-group-name" value="Radio-Second-val" />Group A - Second
+          </label>
+          <br/>
+          <label class="cb-radio">
+            <input type="radio" name="radio-group-name" value="Radio-Third-val" />Group A - Third
+          </label>
+          <br/>
+          <label class="cb-radio">
+            <input type="radio" name="radio-group-name" value="Radio-Fourth-val" />Group A - Fourth
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel mb25">
+    <div class="panel-heading border">
+      Switches
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-4 mb25">
+          <p>Default Switches</p>
+          <label class="switch switch-lg mb15">
+            <input type="checkbox" checked>
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+          <br/>
+
+          <label class="switch mb15">
+            <input type="checkbox">
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+          <br/>
+
+          <label class="switch switch-sm">
+            <input type="checkbox" checked>
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+        </div>
+
+        <div class="col-sm-4 mb25">
+          <p>Square switches</p>
+          <label class="switch switch-lg square mb15">
+            <input type="checkbox" checked disabled="">
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+          <br/>
+
+          <label class="switch square mb15">
+            <input type="checkbox">
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+          <br/>
+
+          <label class="switch switch-sm square">
+            <input type="checkbox" checked>
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+        </div>
+
+        <div class="col-sm-4 mb25">
+          <p>Color options</p>
+          <label class="switch switch-lg switch-primary mb15">
+            <input type="checkbox" checked>
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+          <br/>
+
+          <label class="switch switch-info square mb15">
+            <input type="checkbox" checked>
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+          <br/>
+
+          <label class="switch switch-sm switch-danger">
+            <input type="checkbox" checked>
+            <span>
+                            <i class="handle"></i>
+                        </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb25">
+    <div class="col-sm-6">
+      <div class="panel mb25">
+        <div class="panel-heading border">
+          Chosen Select
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12 mb25">
+              <select data-placeholder="Your Favorite Football Team" class="chosen" chosen style="width: 100%;" ng-model="singleSelect" ng-options="opt.name for opt in bears">
+              </select>
+            </div>
+
+            <div class="col-xs-12 mb25">
+              <p>Multiple Select</p>
+              <select data-placeholder="Your Favorite Types of Bear" multiple class="chosen" chosen style="width: 100%;" ng-model="multipleSelect" ng-options="opt.name for opt in bears">
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mb25">
+        <div class="panel-heading border">
+          International telephone number input
+        </div>
+        <div class="panel-body">
+          <input type="tel" class="form-control telephone-input" ui-jq="intlTelInput">
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading border">
+          Date Pickers
+        </div>
+        <div class="panel-body m15">
+          <div class="form-horizontal bordered-group">
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Default</label>
+              <div class="col-sm-9">
+                <div class="input-prepend input-group input-group-lg">
+                  <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                  <input type="text" name="reservation" class="form-control" ui-jq="daterangepicker" ui-options="{format: 'YYYY-MM-DD',startDate: '2015-01-01',endDate: '2015-12-31'}" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Default</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control mb25" ui-jq="datepicker">
+
+                <div ui-jq="datepicker"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel mb25">
+        <div class="panel-heading border">
+          Spinner
+        </div>
+        <div class="panel-body">
+          <div class="input-group input-group-lg mb25">
+            <input type="text" value="" class="form-control input-lg" ui-jq="TouchSpin" ui-options="{initval: 0}">
+          </div>
+
+          <div class="input-group mb25">
+            <input type="text" value="" class="form-control bl0 br0" ui-jq="TouchSpin" ui-options="{initval: 0,buttondown_class: 'btn btn-success',buttonup_class: 'btn btn-success'}">
+          </div>
+        </div>
+      </div>
+      <div class="panel mb25">
+        <div class="panel-heading border">
+          Input Tags
+        </div>
+        <div class="panel-body">
+          <input id="tags" type="text" value="Amsterdam,Washington,Sydney" ui-jq="tagsInput" />
+        </div>
+      </div>
+
+      <div class="panel mb25">
+        <div class="panel-heading border">
+          Time pickers
+        </div>
+        <div class="panel-body">
+
+          <div class="input-group">
+            <input type="text" class="form-control time-picker" ui-jq="timepicker" />
+            <span class="input-group-addon add-on">
+                            <i class="fa fa-clock-o"></i>
+                        </span>
+          </div>
+
+          <br/>
+
+          <p>Pick time from a clock</p>
+          <div class="input-group input-group-lg clockpicker w200" ui-jq="clockpicker" ui-options="clockOpt">
+            <input type="text" class="form-control" value="10:10">
+            <span class="input-group-addon">
+                            <span class="fa fa-clock-o"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mb25">
+        <div class="panel-heading border">
+          Color picker
+        </div>
+        <div class="panel-body">
+          <input type="text" class="form-control color-picker" value="#5367ce" ui-jq="colorpicker" />
+          <br/>
+
+          <div class="input-group color-picker2 w200" ui-jq="colorpicker" ui-options="colorpickerOpt">
+            <input type="text" value="#00AABB" class="form-control" />
+            <span class="input-group-addon no-bg"><i></i></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

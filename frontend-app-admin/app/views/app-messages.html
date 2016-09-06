@@ -1,0 +1,130 @@
+<div class="eq-col">
+  <div class="relative full-height">
+    <div class="display-row" data-ng-controller="MessagesCtrl">
+      <div class="messages-sidebar col hidden-xs bg-white br">
+        <div class="scroll">
+          <div class="p15">
+            <nav role="navigation">
+              <a href="javascript:;" class="btn btn-primary btn-block mb15">
+                      Compose message
+                  </a>
+              <ul class="nav nav-stacked nav-pills mb15">
+                <li class="disabled text-uppercase small">
+                  <a href="javascript:;">
+                    <strong>mailboxes</strong>
+                  </a>
+                </li>
+                <li data-ng-repeat="folder in folders">
+                  <a href="javascript:;">
+                              {{folder.name}} {{folder.value}}
+                          </a>
+                </li>
+              </ul>
+
+              <ul class="nav nav-stacked nav-pills">
+                <li class="disabled text-uppercase small">
+                  <a href="javascript:;">
+                    <strong>Filter by Tags</strong>
+                  </a>
+                </li>
+                <li data-ng-click="setCurrentTag(null)">
+                  <a href="javascript:;">
+                    <i class="fa fa-square text-white mr5"></i>
+                    <span>All tags</span>
+                  </a>
+                </li>
+                <li data-ng-repeat="tag in tags" data-ng-class="{'active':isCurrentTag(tag)}">
+                  <a href="javascript:;" data-ng-click="setCurrentTag(tag)">
+                    <i class="fa fa-square text-{{tag.color}} mr5"></i> {{tag.name}}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="messages-lister col bg-white br">
+        <div class="scroll">
+          <ul class="message-list">
+            <li class="message-list-item" ng-repeat="message in filteredMessages = ( messages | filter:{tag:currentTag.name})">
+              <a href="javascript:;" data-ng-click="setCurrentMessage(message.id);app.isMessageOpen = true">
+                <div class="message-list-item-header">
+                  <div class="time">{{ message.date | date: 'dd MMMM yyyy' }}</div>
+                  <span>{{ message.from }}</span>
+                </div>
+                <p>{{ message.subject }}</p>
+              </a>
+            </li>
+            <li class="message-list-item" ng-hide="filteredMessages.length">
+              <a href="javascript:;">
+                <div class="message-list-item-header">
+                  <span>Nothing to display</span>
+                </div>
+                <p>You don't have any messages to view</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col messages-viewer">
+        <div class="scroll full-height">
+          <div class="p15 full-height">
+            <div ng-if="currentMessage">
+              <div class="mail-view-header">
+                <div class="mail-view-header-toolbar">
+                  <div class="pull-right">
+                    <a href="javascript:;"><span class="fa fa-send"></span></a>
+
+                    <a href="javascript:;" class="disabled ml15"><span class="bl"></span></a>
+
+                    <a href="javascript:;" class="ml15" tooltip-placement="bottom" tooltip="Reply to sender"><span class="fa fa-reply"></span></a>
+                    <a href="javascript:;" class="ml15" tooltip-placement="bottom" tooltip="Reply to all recipients"><span class="fa fa-reply-all"></span></a>
+                    <a href="javascript:;" class="ml15" tooltip-placement="bottom" tooltip="Forward message"><span class="fa fa-long-arrow-right"></span></a>
+
+                    <a href="javascript:;" class="ml15" tooltip-placement="left" tooltip="Flag message"><span class="fa fa-flag"></span></a>
+                  </div>
+
+                  <a href="#" data-ng-click="app.isMessageOpen = false" class="mr5">
+                    <span class="fa fa-long-arrow-left visible-xs"></span>
+                  </a>
+
+                  <a href="javascript:;" tooltip-placement="right" tooltip="Star message"><span class="fa fa-star-o"></span></a>
+
+                </div>
+
+                <div class="pull-left pr15" ng-if="currentMessage">
+                  <img data-ng-src="{{ currentMessage.avatar }}" class="avatar avatar-md img-circle" alt/>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="date">{{ currentMessage.date | date:'dd MMMM yyyy HH:mm:ss' }}</div>
+                  <div class="lead bold">{{ currentMessage.subject }}</div>
+                  <div class="message-sender">
+                    <p class="text-info">{{ currentMessage.from }} to me</p>
+                  </div>
+                </div>
+              </div>
+
+              <div ng-bind-html="currentMessage.body"></div>
+
+              <div ng-if="currentMessage.files">
+                <div class="message-files">
+                  <a href="javascript:;" class="btn btn-sm no-bg no-border pull-right">
+                    <i class="glyphicon glyphicon-download"></i> Save attachments
+                  </a>
+                  <a href="javascript:;" class="btn btn-sm no-bg no-border" ng-repeat="file in currentMessage.files">
+                    <i class="fa fa-file-{{file.type}}-o mr5"></i> {{file.filename}} {{file.size}}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div ng-if="!currentMessage" class="no-messages">
+              <div class="no-message-title">
+                <h3 class="text-shadow text-muted">No message selected</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

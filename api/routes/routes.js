@@ -1,32 +1,14 @@
 "use strict";
+
 /***
- * Mapeamento de rotas da API
+ * Mapeamento das rotas
  * @author Eduardo Hattori
- * @date 2016-06-08
+ * @date 09/08/16.
  */
 module.exports = function(app){
 
-    var auth           = app.modulos.helpers.authHelper;
-    var userController = app.modulos.controllers.userController;
+    var auth = app.modules.authHelper;
 
-    var log = app.modulos.helpers.logHelper;
+    app.all('*');
 
-    app.all('/');
-
-
-    //ROUTES USER
-    app.post('/api/user', userController.create);
-    app.post('/api/user/login', userController.login);
-    app.get('/api/token/valid', auth.tokenAuthenticate().authenticate('bearer', { session: false }), userController.get);
-
-    //app.all('/', auth.authenticate().authenticate('bearer', { session: false }), userController.get);
-    //
-    //app.get('/teste', auth.authenticate().authenticate('bearer', { session: false }), userController.teste);
-    //
-    //app.post('/api/login', userController.login);
-
-
-
-
-}
-
+};

@@ -1,0 +1,25 @@
+<div class="eq-col">
+  <div class="display-row">
+    <div class="world-map" ng-controller="mapCtrl">
+      <div ng-repeat="marker in myMarkers" ui-map-marker="myMarkers[$index]" ui-event="{'map-click': 'openMarkerInfo(marker)'}"></div>
+
+      <div ui-map-info-window="myInfoWindow">
+        <h3>Marker</h3>
+
+        <div class="form-group">
+          <label>Latitude</label>
+          <input ng-model="currentMarkerLat" class="form-control input-sm">
+        </div>
+
+        <div class="form-group">
+          <label>Longitude</label>
+          <input ng-model="currentMarkerLng" class="form-control input-sm">
+        </div>
+
+        <a ng-click="setMarkerPosition(currentMarker, currentMarkerLat, currentMarkerLng)" class="btn btn-default btn-sm">Set Position</a>
+      </div>
+
+      <div ui-map="myMap" ui-options="mapOptions" ui-event="{'map-click': 'addMarker($event, $params)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }" id="google-container"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div data-ng-controller="FlotCtrl">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel">
+        <div class="panel-heading border">
+          Line Chart
+        </div>
+        <div class="panel-body">
+          <flot dataset="lineDataset" options="lineOptions" class="chart" height="320"></flot>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel">
+        <div class="panel-heading border">
+          Grouped Bar Chart
+        </div>
+        <div class="panel-body">
+          <flot dataset="barDataset" options="barOptions" class="chart" height="320"></flot>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel">
+        <div class="panel-heading border">
+          Pie Chart
+        </div>
+        <div class="panel-body">
+          <flot dataset="pieDataset" options="pieOptions" class="chart-sm" height="150"></flot>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel">
+        <div class="panel-heading border">
+          Realtime Chart
+        </div>
+        <div class="panel-body">
+          <flot dataset="realDataset" options="realOptions" class="chart-sm" height="150"></flot>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
