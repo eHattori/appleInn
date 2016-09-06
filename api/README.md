@@ -9,7 +9,7 @@ O ambiente é configurado usando Docker, você pode criar/baixar a imagem que va
 **Baixar do Docker Hub a Imagem do NodeJS e Executar o Container**
 
     $ sudo docker pull ehattori/nodejs
-    $ sudo docker run -it -p 3000:3000 --net host -v /$SOURCE/applein/api/:/home/project ehattori/nodejs
+    $ sudo docker run -it -p 3000:3000 --net host -v /$SOURCE/appleinn/api/:/home/project ehattori/nodejs
 
     
 **Baixar do Docker Hub a Imagem do Elasticsearch e Executar o Container**
