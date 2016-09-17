@@ -9,7 +9,7 @@
   },
   "timeExpireSession" : 1,
   "crypt" : {
-    "secret"    : "<KEY_SECRETS_TOKEN>_ "
+    "secret"    : "<KEY_SECRETS_TOKEN>"
   },
   "elasticsearch" : {
     "host" : "localhost:9200",
