@@ -208,5 +208,5 @@ function CalendarCtrl($scope, $compile, uiCalendarConfig) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('CalendarCtrl', ['$scope', '$compile', 'uiCalendarConfig', CalendarCtrl]);

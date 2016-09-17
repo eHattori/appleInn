@@ -14,5 +14,5 @@ function draggablePortletsCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('draggablePortletsCtrl', ['$scope', draggablePortletsCtrl]);

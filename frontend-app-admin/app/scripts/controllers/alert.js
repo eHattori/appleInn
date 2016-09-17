@@ -67,5 +67,5 @@ function sweetAlertCtrl($scope, SweetAlert, COLORS) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('sweetAlertCtrl', ['$scope', 'SweetAlert', 'COLORS', sweetAlertCtrl]);

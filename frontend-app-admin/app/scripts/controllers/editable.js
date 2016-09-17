@@ -189,5 +189,5 @@ function tableEditableCtrl($scope, $filter, $http, editableOptions, editableThem
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('tableEditableCtrl', ['$scope', '$filter', '$http', 'editableOptions', 'editableThemes', tableEditableCtrl]);

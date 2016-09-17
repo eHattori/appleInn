@@ -23,4 +23,4 @@ function chosen() {
   };
 }
 
-angular.module('urbanApp').directive('chosen', chosen);
+angular.module('temQuartoApp').directive('chosen', chosen);

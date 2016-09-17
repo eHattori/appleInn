@@ -1,16 +1,9 @@
 {
   "name": "rickshaw",
-  "version": "1.5.1",
-  "homepage": "http://code.shutterstock.com/rickshaw/",
+  "version": "1.5.10",
   "dependencies": {
-    "d3": "~3.3.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/shutterstock/rickshaw.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shutterstock/rickshaw/issues"
+    "d3": "~3.3.6",
+    "jquery": "2.1.4"
   },
   "keywords": [
     "d3",

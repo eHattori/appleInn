@@ -7,5 +7,5 @@ function maskCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('maskCtrl', ['$scope', maskCtrl]);

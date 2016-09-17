@@ -11,5 +11,5 @@ function editorCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('editorCtrl', ['$scope', editorCtrl]);

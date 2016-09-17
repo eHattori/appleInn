@@ -33,4 +33,4 @@ function quickLaunch($timeout) {
   };
 }
 
-angular.module('urbanApp').directive('quickLaunch', quickLaunch);
+angular.module('temQuartoApp').directive('quickLaunch', quickLaunch);

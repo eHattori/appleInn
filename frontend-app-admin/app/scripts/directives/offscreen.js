@@ -45,4 +45,4 @@ function offscreen($rootScope, $timeout) {
   };
 }
 
-angular.module('urbanApp').directive('offscreen', offscreen);
+angular.module('temQuartoApp').directive('offscreen', offscreen);

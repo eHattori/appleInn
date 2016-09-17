@@ -70,5 +70,5 @@ function sliderCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('sliderCtrl', ['$scope', sliderCtrl]);

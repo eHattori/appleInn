@@ -25,7 +25,7 @@ module.exports = function(app){
 
 
     var log = bunyan.createLogger({
-        name: "Multiverse",
+        name: "Appleinn",
         streams: [
             { stream: msqlStream , level : 'trace'}
         ]

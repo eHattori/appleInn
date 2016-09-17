@@ -105,5 +105,5 @@ function easyChartCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('easyChartCtrl', ['$scope', easyChartCtrl]);

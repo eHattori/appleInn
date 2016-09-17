@@ -19,4 +19,4 @@ function panelControlRefresh($timeout) {
   };
 }
 
-angular.module('urbanApp').directive('panelControlRefresh', panelControlRefresh);
+angular.module('temQuartoApp').directive('panelControlRefresh', panelControlRefresh);

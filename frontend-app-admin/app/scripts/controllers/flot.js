@@ -231,5 +231,5 @@ function FlotCtrl($scope, $interval, COLORS) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('FlotCtrl', ['$scope', '$interval', 'COLORS', FlotCtrl]);

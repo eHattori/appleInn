@@ -1,6 +1,6 @@
 'use strict';
 
-function dashboardCtrl($scope, $interval, COLORS) {
+function dashboardCtrl($scope, $interval, $auth, COLORS) {
 
   var visits = [
         [0, 8],
@@ -13,6 +13,7 @@ function dashboardCtrl($scope, $interval, COLORS) {
         [7, 7],
         [8, 1]
         ];
+
 
   $scope.lineDataset = [{
       data: visits,
@@ -204,5 +205,5 @@ function dashboardCtrl($scope, $interval, COLORS) {
 }
 
 angular
-  .module('urbanApp')
-  .controller('dashboardCtrl', ['$scope', '$interval', 'COLORS', dashboardCtrl]);
+  .module('temQuartoApp')
+  .controller('dashboardCtrl', ['$scope', '$interval', '$auth', 'COLORS', dashboardCtrl]);

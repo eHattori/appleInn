@@ -7,5 +7,5 @@ function tableCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('tableCtrl', ['$scope', tableCtrl]);

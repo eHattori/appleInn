@@ -24,4 +24,4 @@ function preloader($rootScope, $timeout) {
   };
 }
 
-angular.module('urbanApp').directive('preloader', preloader);
+angular.module('temQuartoApp').directive('preloader', preloader);

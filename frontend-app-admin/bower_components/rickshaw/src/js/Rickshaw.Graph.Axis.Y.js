@@ -6,6 +6,7 @@ Rickshaw.Graph.Axis.Y = Rickshaw.Class.create( {
 
 		this.graph = args.graph;
 		this.orientation = args.orientation || 'right';
+		this.color = args.color;
 
 		this.pixelsPerTick = args.pixelsPerTick || 75;
 		if (args.ticks) this.staticTicks = args.ticks;
@@ -82,24 +83,59 @@ Rickshaw.Graph.Axis.Y = Rickshaw.Class.create( {
 	},
 
 	_drawAxis: function(scale) {
+		var self = this;
 		var axis = d3.svg.axis().scale(scale).orient(this.orientation);
 		axis.tickFormat(this.tickFormat);
 		if (this.tickValues) axis.tickValues(this.tickValues);
 
 		if (this.orientation == 'left') {
-			var berth = this.height * this.berthRate;
-			var transform = 'translate(' + this.width + ', ' + berth + ')';
+			var transform = 'translate(' + this.width + ', 0)';
 		}
 
 		if (this.element) {
 			this.vis.selectAll('*').remove();
 		}
 
+		function colorAxes(selection) {
+			if (!self.color) return;
+			selection.selectAll("text").style("fill", self.color);
+			selection.selectAll("line, path").style("stroke", self.color);
+		}
+
+		function breaker(selection) {
+			var yMin = +Infinity;
+			self.graph.stackedData.forEach( function(series) {
+
+				series.forEach( function(d) {
+					if (d.y == null) return;
+
+					var y = d.y + d.y0;
+					if (y < yMin) yMin = y;
+				} );
+
+			} );
+
+			if (yMin === 0 || self.graph.min === 0) {
+				// when domain starts at 0, do not apply break
+				return;
+			}
+			var path = selection.select('path').attr("d");
+			var axisHeight = path.match(/(-?\d+)\s*H\s*-?\d+$/)[1];
+
+			var lineBreaker = 'V' + (parseInt(axisHeight, 10) - 8) +
+				'm6,-3 l-12,6 m12,-3 l-12,6 m6,-3';
+
+			var newPath = path.replace(/(V-?\d+\s*H\s*-?\d+)$/, lineBreaker+'$1');
+			selection.select('path').attr("d", newPath);
+		}
+
 		this.vis
 			.append("svg:g")
 			.attr("class", ["y_ticks", this.ticksTreatment].join(" "))
 			.attr("transform", transform)
-			.call(axis.ticks(this.ticks).tickSubdivide(0).tickSize(this.tickSize));
+			.call(axis.ticks(this.ticks).tickSubdivide(0).tickSize(this.tickSize))
+			.call(breaker)
+			.call(colorAxes);
 
 		return axis;
 	},

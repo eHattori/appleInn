@@ -235,5 +235,5 @@ function chartjsCtrl($scope, COLORS) {
 
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('chartjsCtrl', ['$scope', 'COLORS', chartjsCtrl]);

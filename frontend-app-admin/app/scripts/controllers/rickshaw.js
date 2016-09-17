@@ -125,5 +125,5 @@ function rickshawCtrl($scope, COLORS) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('rickshawCtrl', ['$scope', 'COLORS', rickshawCtrl]);

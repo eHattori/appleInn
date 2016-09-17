@@ -43,14 +43,16 @@
     "angular-flot": "~0.0.6",
     "fullcalendar": "~2.3.1",
     "jquery.easy-pie-chart": "~2.1.6",
-    "d3": "~3.5.5"
+    "d3": "~3.5.5",
+    "satellizer": "^0.15.5",
+    "angular-md5": "^0.1.10"
   },
   "appPath": "app",
   "moduleName": "urbanApp",
   "resolutions": {
     "fullcalendar": "~2.3.1",
     "d3": "~3.5.5",
-    "angular": "1.x",
+    "angular": "~1.5.x",
     "jquery": "1.x",
     "bootstrap": ">= 3.0.1"
   }

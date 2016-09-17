@@ -64,5 +64,5 @@ function MessagesCtrl($scope, messages) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('MessagesCtrl', ['$scope', 'messages', MessagesCtrl]);

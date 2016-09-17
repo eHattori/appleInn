@@ -16,5 +16,5 @@ function uploadCtrl($scope, FileUploader) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('uploadCtrl', ['$scope', 'FileUploader', uploadCtrl]);

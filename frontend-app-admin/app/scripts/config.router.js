@@ -1,13 +1,21 @@
 'use strict';
 
 angular
-  .module('urbanApp')
-  .run(['$rootScope', '$state', '$stateParams',
-        function ($rootScope, $state, $stateParams) {
+  .module('temQuartoApp')
+  .run(['$rootScope', '$state', '$stateParams','$auth','$window',
+        function ($rootScope, $state, $stateParams, $auth,$window) {
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
       $rootScope.$on('$stateChangeSuccess', function () {
-        window.scrollTo(0, 0);
+          window.scrollTo(0, 0);
+
+          //if(!(!$window.localStorage.user || $window.localStorage.user === null || $window.localStorage.user === "null")) {
+          //    $rootScope.user = JSON.parse($window.localStorage.user);
+          //    $state.go('app.dashboard');
+          //} else {
+          //    $state.go('user.signin');
+          //}
+
       });
       FastClick.attach(document.body);
         },
@@ -16,7 +24,9 @@ angular
     function ($stateProvider, $urlRouterProvider) {
 
       // For unmatched routes
-      $urlRouterProvider.otherwise('/');
+      $urlRouterProvider.otherwise('/signin');
+
+
 
       // Application routes
       $stateProvider

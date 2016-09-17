@@ -155,4 +155,4 @@ function ngC3() {
   };
 }
 
-angular.module('urbanApp').directive('ngC3', ngC3);
+angular.module('temQuartoApp').directive('ngC3', ngC3);

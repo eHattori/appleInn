@@ -8,5 +8,5 @@ function sortableCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('sortableCtrl', ['$scope', sortableCtrl]);

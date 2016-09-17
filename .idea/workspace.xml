@@ -2,20 +2,843 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d2aed1c-6886-481b-a9a5-8ea0b8d78e3b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/modelagem/modelo_temquarto.dbm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/modelagem/temquarto.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/alter_add_fks.ddl.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/sq_nivel_permissao.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_conta_corrente.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_moteis.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_quartos.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_status_transacao.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_usuario.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_cad_usuario_app.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_nivel_permissao.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/scripts/tb_reserva_uapp.ddl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/postgres/Dockerfile" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/middleware/authMiddleware.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/helpers/cryptoHelper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/test/helper/cryptoHelperTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/infra/facebookInfra.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/test/infra/facebookInfraTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/infra/googleInfra.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/helpers/requestHelper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/controllers/userController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/test/controllers/userControllerTest.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/rand-token/test/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/Contributing.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/docs/head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/docs/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/docs/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/docs/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/docs/tail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/docs/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/is-object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/agent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/parsers/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/parsers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/parsers/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/parsers/text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/parsers/urlencoded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/part.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/response.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/node/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/request-base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/lib/request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/.bin/mime" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/component-emitter/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/component-emitter/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/component-emitter/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/component-emitter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/component-emitter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/cookiejar/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/cookiejar/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/cookiejar/cookiejar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/cookiejar/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/cookiejar/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/cookiejar/tests/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node_modules/ms/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node_modules/ms/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node_modules/ms/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node_modules/ms/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node_modules/ms/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/node_modules/ms/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/debug/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/.jscs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/extend/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/.dockerignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/License" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/lib/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/lib/form_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/lib/populate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/dist/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/dist/async.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/lib/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/async/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/License" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/License" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/combined-stream/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/db.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/node_modules/mime-types/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/form-data/wercker.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/incoming_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/json_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/multipart_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/octet_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/lib/querystring_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/formidable/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/build/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/build/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/mime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/mime/types.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/dist/qs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/lib/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/lib/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/test/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/test/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/qs/test/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/doc/stream.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/duplex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/lib/_stream_duplex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/lib/_stream_passthrough.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/lib/_stream_readable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/lib/_stream_transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/lib/_stream_writable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/buffer-shims/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/buffer-shims/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/buffer-shims/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/buffer-shims/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/float.patch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/inherits/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/inherits/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/inherits/inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/inherits/inherits_browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/inherits/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/inherits/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/isarray/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/process-nextick-args/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/process-nextick-args/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/process-nextick-args/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/process-nextick-args/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/process-nextick-args/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/process-nextick-args/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/util-deprecate/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/util-deprecate/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/util-deprecate/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/util-deprecate/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/util-deprecate/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/node_modules/util-deprecate/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/passthrough.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/readable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/node_modules/readable-stream/writable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/superagent/superagent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/node_modules/supertest/test/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.mailmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/build/release-notes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/build/release.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/jquery-migrate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/jquery-migrate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/benchmarker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/benchmarker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/closest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/event.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/find.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/jquery-basis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/speed/slice.vs.concat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/event-alias.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/exports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/sizzle-jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/.jshintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/1x1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/ajax/unreleasedXHR.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/atom+xml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/badcall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/badjson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/cleanScript.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/core/cc_on.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/dashboard.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/dimensions/documentLarge.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/dimensions/documentSmall.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/echoData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/echoQuery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/errorWithJSON.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/errorWithText.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/etag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/evalScript.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/event/focusElem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/event/longLoadScript.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/event/promiseReady.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/event/syncReady.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/headers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/if_modified_since.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/iframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/json.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/json_obj.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/jsonp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/manipulation/iframe-denied.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/name.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/name.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/nocontent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/absolute.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/body.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/fixed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/relative.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/static.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/offset/table.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/params_html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/readywaitasset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/readywaitloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/script.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/selector/html5_selector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/selector/sizzle_cache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/statusText.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/support/bodyBackground.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/support/boxSizing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/support/csp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/support/csp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/support/shrinkWrapBlocks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/support/testElementCrash.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/test2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/test3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/testinit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/testrunner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/testsuite.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/text.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/ua.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/with_fries.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/data/with_fries_over_jsonp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/delegatetest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/hovertest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/localfile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/networkerror.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/readywait.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/effects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/exports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/unit/wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/test/xhtml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/.jshintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/.rock.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/bars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/css/extensions.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/css/lines.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/data/data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/data/data.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/data/data2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/data/status.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/extensions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/fixed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/formatter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/gaps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/hover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/interp_cardinal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/interp_linear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/interp_step.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/offset_pct.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/offset_stack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/offset_stream.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/offset_value.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_curves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_lines.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_percent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_scatter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_stack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_step.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/images/om_stream.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/inconsistent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/js/extensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/jsonp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/legend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/lineplot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/lines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/logscale.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/milliseconds.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/multi.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/negative.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/refresh.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/resize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/scaled.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/scatterplot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/ajax.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/colors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/extensions.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/lines.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/logscale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/scaled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/scatterplot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/simple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/start.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/status.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/stops.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/screenshots/y_axis.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/series.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/socket.io/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/socket.io/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/socket.io/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/socket.io/socket.io.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/sparse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/status.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/stops.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/timescale.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/x_axis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/examples/y_axis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Fixtures.Time.Local.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Fixtures.Time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.Axis.X.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.Axis.Y.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.Legend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.RangeSlider.Preview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.Renderer.Multi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.Renderer.Scatterplot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.Renderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Graph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Series.FixedDuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/Rickshaw.Series.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tests/data/simple.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_01.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_05.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_06.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/example_07.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/transform.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/transform_epoch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/transform_region.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/vendor/prettify/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/tutorial/vendor/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/vendor/d3.layout.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/vendor/d3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/vendor/d3.v2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/vendor/d3.v3.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.min.js.gzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/images/error.png" afterPath="$PROJECT_DIR$/api/node_modules/mocha/images/error.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/images/ok.png" afterPath="$PROJECT_DIR$/api/node_modules/mocha/images/ok.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/.bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/.bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/.bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/bin/.eslintrc" afterPath="$PROJECT_DIR$/api/node_modules/mocha/bin/.eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/.jshintrc" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/.jshintrc" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/.npmignore" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/.npmignore" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/.npmignore" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/.npmignore" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/.npmignore" afterPath="$PROJECT_DIR$/api/node_modules/supertest/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/.travis.yml" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/.travis.yml" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/.travis.yml" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/.travis.yml" afterPath="$PROJECT_DIR$/api/node_modules/supertest/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/tables/2-crete_table_user.sql" afterPath="$PROJECT_DIR$/database/tables/2-crete_table_user.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/AUTHORS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/CHANGELOG.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/Gruntfile.js" afterPath="$PROJECT_DIR$/frontend-app-admin/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/HISTORY.md" afterPath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/History.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/History.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/History.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/History.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/History.md" afterPath="$PROJECT_DIR$/api/node_modules/supertest/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/LICENSE.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/LICENSE.txt" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/LICENSE.txt" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/LICENSE.txt" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/to-iso-string/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/to-iso-string/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/supertest/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/LICENSE" afterPath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/Makefile" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/Makefile" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/README.markdown" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/diff/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/diff/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/README.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/README.md" afterPath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/README.md" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/README.md" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/Readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/Readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/Readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/Readme.md" afterPath="$PROJECT_DIR$/api/node_modules/supertest/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Y.Scaled.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Y.Scaled.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Y.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Y.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/js/Rickshaw.Graph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/SweetAlert.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/SweetAlert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/SweetAlert.min.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/SweetAlert.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/lib/agent.js" afterPath="$PROJECT_DIR$/api/node_modules/supertest/lib/agent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/alert.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/anchor-scroll.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/anchor-scroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular-csp.css" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app.js" afterPath="$PROJECT_DIR$/api/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/app.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/app.main.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/app.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modules/helpers/authHelper.js" afterPath="$PROJECT_DIR$/api/modules/helpers/authHelper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/base.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/bdd.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/bdd.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/bdd.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/bdd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/bootstrap.ui.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/bootstrap.ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/bower.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/bower.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular-sweetalert/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/browser-entry.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/browser-entry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/browser.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/browser.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/c3.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/c3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/c3.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/c3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/calendar.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/changelog.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/changelog.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/chartjs.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/chartjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/chmod.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/chmod.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/chosen.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/chosen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/clobber.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/clobber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/common.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/common.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/component.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/config.router.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/config.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/context.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/context.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/dash.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/dash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/views/dashboard.html" afterPath="$PROJECT_DIR$/frontend-app-admin/app/views/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/dashboard.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/debug.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/debug.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/config/default.json" afterPath="$PROJECT_DIR$/api/config/default.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/default_bool.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/default_bool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/config/dev.json" afterPath="$PROJECT_DIR$/api/config/dev.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/diff/diff.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/diff/diff.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/dimensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/doc.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/doc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/dot.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/dot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/dotted.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/dotted.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/draggable.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/draggable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/easychart.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/easychart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/editable.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/editable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/editor.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/events.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/exports.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/exports.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/views/extras-signin.html" afterPath="$PROJECT_DIR$/frontend-app-admin/app/views/extras-signin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/flot.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/form.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/gallery.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/gallery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/glob.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/glob.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/google.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/google.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/css/graph.css" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/css/graph.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/lib/growl.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/lib/growl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/hook.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/hook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/html.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/html.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/index.html" afterPath="$PROJECT_DIR$/frontend-app-admin/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/bunyan-mysql/index.js" afterPath="$PROJECT_DIR$/api/node_modules/bunyan-mysql/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/to-iso-string/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/to-iso-string/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/index.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/index.js" afterPath="$PROJECT_DIR$/api/node_modules/supertest/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/index.js" afterPath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/inflight.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/inflight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/inherits.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/inherits.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/inherits_browser.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/inherits_browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/json-stream.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/json-stream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/json.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/lib/json3.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/lib/json3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/lib/json3.min.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/lib/json3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax/jsonp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/landing.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/landing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/license" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/license" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/license" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/license" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/list.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modules/infra/logInfra.js" afterPath="$PROJECT_DIR$/api/modules/infra/logInfra.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/long.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/long.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/manipulation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/test/map.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/test/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/markdown.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/markdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/mask.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/mask.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/messages.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/services/messages.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/services/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/min.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/minimatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/mkdirp.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/mkdirp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/mocha.css" afterPath="$PROJECT_DIR$/api/node_modules/mocha/mocha.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/mocha.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/mocha.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/mocha.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/mocha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/mocha.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/mocha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/ms.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/navigation.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/notifications.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/notifications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/nvd3.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/nvd3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/nyan.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/nyan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/offscreen.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/offscreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/old.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/old.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/once.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/once.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/bin/options.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/bin/options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/opts_fs.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/opts_fs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/opts_fs_sync.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/opts_fs_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/package.json" afterPath="$PROJECT_DIR$/api/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/browser-stdout/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/commander/node_modules/graceful-readlink/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/debug/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/diff/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/diff/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/fs.realpath/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/json3/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash._basecopy/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash._getnative/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarguments/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._baseassign/node_modules/lodash.keys/node_modules/lodash.isarray/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._basecreate/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/lodash.create/node_modules/lodash._isiterateecall/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/package.json" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/package.json" afterPath="$PROJECT_DIR$/api/node_modules/supertest/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/package.json" afterPath="$PROJECT_DIR$/api/node_modules/supertest/node_modules/methods/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/package.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/package.json" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/panel-control-collapse.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/panel-control-collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/panel-control-refresh.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/panel-control-refresh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/panel-control-remove.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/panel-control-remove.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/example/parse.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/example/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/parse.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/parse_modified.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/parse_modified.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/pending.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/pending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/perm.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/perm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/perm_sync.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/perm_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/examples/pow.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/examples/pow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/preloader.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/preloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/config/production.json" afterPath="$PROJECT_DIR$/api/config/production.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/progress.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/progress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/progress.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/progress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/queue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/quick-launch.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/quick-launch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/qunit.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/qunit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/race.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/race.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/readme.markdown" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/readme.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/readme.markdown" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/readme.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/escape-string-regexp/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/readme.md" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/supports-color/node_modules/has-flag/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/rel.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/rel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/return.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/return.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/return_sync.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/return_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.css" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/rickshaw.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/rickshaw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/rickshaw.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/rickshaw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.min.css" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.min.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/rickshaw.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/root.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/routes.js" afterPath="$PROJECT_DIR$/api/routes/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/runnable.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/runnable.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/runnable.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/runnable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/runner.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/runner.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/runner.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/runner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/scrollup.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/scrollup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/serialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/session.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/session.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/short.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/short.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/slider.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/sortable.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/sortable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/spec.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/helpers/startUMD.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/rickshaw/src/helpers/startUMD.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/suite.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/suite.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/suite.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/suite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/test/supertest.js" afterPath="$PROJECT_DIR$/api/node_modules/supertest/test/supertest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/support.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/sync.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/sync.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/table.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/tap.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/tap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/tdd.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/interfaces/tdd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/template.html" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/test.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/test.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/test.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/test.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/growl/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/lib/test.js" afterPath="$PROJECT_DIR$/api/node_modules/supertest/lib/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/config/test.json" afterPath="$PROJECT_DIR$/api/config/test.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/test/fixtures/test_cert.pem" afterPath="$PROJECT_DIR$/api/node_modules/supertest/test/fixtures/test_cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/supertest/test/fixtures/test_key.pem" afterPath="$PROJECT_DIR$/api/node_modules/supertest/test/fixtures/test_key.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modules/domains/tokenDomain.js" afterPath="$PROJECT_DIR$/api/modules/domains/tokenDomain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/test/domains/tokenDomainTest.js" afterPath="$PROJECT_DIR$/api/test/domains/tokenDomainTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/tty.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/browser/tty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/umask.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/umask.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/umask_sync.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/test/umask_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/upload.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/bin/usage.txt" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/bin/usage.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modules/domains/userDomain.js" afterPath="$PROJECT_DIR$/api/modules/domains/userDomain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/modules/models/userModel.js" afterPath="$PROJECT_DIR$/api/modules/models/userModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/utils.js.orig" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/utils.js.orig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/utils.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/validation.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/vector.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/vector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/vector.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/directives/vector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/whitespace.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/mkdirp/node_modules/minimist/test/whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/wizard.js" afterPath="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/wizard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/frontend-app-admin/bower_components/jquery/src/ajax/xhr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/xunit.js" afterPath="$PROJECT_DIR$/api/node_modules/mocha/lib/reporters/xunit.js" />
     </list>
     <ignored path="appleInn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +858,18 @@
     <favorites_list name="appleInn" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39593908">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,25 +884,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/test/quartoTest.js" />
-        <option value="$PROJECT_DIR$/api/app.js" />
-        <option value="$PROJECT_DIR$/api/modulos/infra/postgresInfra.js" />
-        <option value="$PROJECT_DIR$/api/node_modules/sequelize/lib/sequelize.js" />
         <option value="$PROJECT_DIR$/api/test/connectionEnviromentTest.js" />
         <option value="$PROJECT_DIR$/api/modulos/models/logModel.js" />
         <option value="$PROJECT_DIR$/api/test/logHelperTest.js" />
-        <option value="$PROJECT_DIR$/api/routes/routes.js" />
         <option value="$PROJECT_DIR$/api/test/userControllerTest.js" />
         <option value="$PROJECT_DIR$/api/modulos/domains/userDomain.js" />
         <option value="$PROJECT_DIR$/api/modulos/controllers/userController.js" />
+        <option value="$PROJECT_DIR$/database/tables/1-crete_table_log.sql" />
+        <option value="$PROJECT_DIR$/api/README.md" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/package.json" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/alert.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/bootstrap.ui.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/c3.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/calendar.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/chartjs.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/draggable.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/bower.json" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/api/test/controllers/userControllerTest.js" />
+        <option value="$PROJECT_DIR$/api/test/domains/userDomainTest.js" />
+        <option value="$PROJECT_DIR$/api/test/infra/facebookInfraTest.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/dashboard.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/app.main.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/config.router.js" />
+        <option value="$PROJECT_DIR$/api/modules/infra/facebookInfra.js" />
+        <option value="$PROJECT_DIR$/api/modules/infra/mysqlInfra.js" />
+        <option value="$PROJECT_DIR$/database/tables/2-crete_table_user.sql" />
+        <option value="$PROJECT_DIR$/api/modules/models/userModel.js" />
+        <option value="$PROJECT_DIR$/api/modules/infra/googleInfra.js" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/views/extras-signin.html" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/index.html" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/session.js" />
+        <option value="$PROJECT_DIR$/api/modules/domains/userDomain.js" />
+        <option value="$PROJECT_DIR$/api/modules/helpers/requestHelper.js" />
+        <option value="$PROJECT_DIR$/api/package.json" />
+        <option value="$PROJECT_DIR$/api/test/domains/tokenDomainTest.js" />
+        <option value="$PROJECT_DIR$/api/modules/controllers/userController.js" />
+        <option value="$PROJECT_DIR$/api/modules/helpers/authHelper.js" />
+        <option value="$PROJECT_DIR$/api/app.js" />
+        <option value="$PROJECT_DIR$/api/modules/helpers/cryptoHelper.js" />
+        <option value="$PROJECT_DIR$/api/test/helper/cryptoHelperTest.js" />
+        <option value="$PROJECT_DIR$/api/modules/infra/logInfra.js" />
+        <option value="$PROJECT_DIR$/api/node_modules/bunyan-mysql/index.js" />
+        <option value="$PROJECT_DIR$/api/routes/routes.js" />
+        <option value="$PROJECT_DIR$/api/modules/middleware/authMiddleware.js" />
+        <option value="$PROJECT_DIR$/api/modules/domains/tokenDomain.js" />
         <option value="$PROJECT_DIR$/api/config/default.json" />
         <option value="$PROJECT_DIR$/api/config/dev.json" />
         <option value="$PROJECT_DIR$/api/config/production.json" />
         <option value="$PROJECT_DIR$/api/config/test.json" />
-        <option value="$PROJECT_DIR$/database/tables/1-crete_table_log.sql" />
-        <option value="$PROJECT_DIR$/database/tables/2-crete_table_user.sql" />
-        <option value="$PROJECT_DIR$/api/package.json" />
-        <option value="$PROJECT_DIR$/api/README.md" />
+        <option value="$PROJECT_DIR$/frontend-app-admin/app/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -107,6 +973,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -135,22 +1003,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="frontend-app-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend-app-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend-app-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appleInn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/modules/infra" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.userDomain.js">
+    <configuration default="false" name="userDomain.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="userDomain.js" working-dir="$PROJECT_DIR$/api/modules/domains">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -189,8 +1119,19 @@
       <envs />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.userDomain.js" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.userDomain.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0d2aed1c-6886-481b-a9a5-8ea0b8d78e3b" name="Default" comment="" />
@@ -202,185 +1143,421 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1360" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24906507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2460733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993559" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/node_modules/sequelize/lib/sequelize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46085408">
-          <caret line="734" column="26" selection-start-line="734" selection-start-column="26" selection-end-line="734" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1162791">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/dev.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/production.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/ddl/1-create_database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/ddl/2-create_user.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/tables/1-crete_table_log.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/tables/2-crete_table_user.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4651163">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4787234">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/default.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44680852">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/README.md">
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.505618">
-            <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-            <folding />
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/admin/.bootstraprc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/.buildignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.666666">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/bower_components/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/services/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.46192893">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.83871">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/bootstrap.ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="432" column="2" selection-start-line="432" selection-start-column="2" selection-end-line="432" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/c3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="2" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/chartjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="237" column="2" selection-start-line="237" selection-start-column="2" selection-end-line="237" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/draggable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39593908">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test/domains/userDomainTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8781726">
+          <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test/controllers/userControllerTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test/infra/facebookInfraTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2994924">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.142857">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/app.main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/config.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/infra/facebookInfra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/infra/mysqlInfra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42639595">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/views/common/session.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/infra/googleInfra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23857868">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/tables/2-crete_table_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2241993">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/ddl/2-create_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09137056">
+          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/models/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39086294">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/views/extras-signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.88889">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.821429">
+          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/controllers/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19217081">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/domains/userDomain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="71" selection-start-line="78" selection-start-column="71" selection-end-line="78" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63829786">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test/domains/tokenDomainTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30964467">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/controllers/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6040609">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test/helper/cryptoHelperTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/infra/logInfra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/node_modules/bunyan-mysql/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48730963">
+          <caret line="46" column="97" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/helpers/cryptoHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5482234">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/middleware/authMiddleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18274112">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/domains/tokenDomain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5786802">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/modules/helpers/requestHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4568528">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="21" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/dev.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.555555">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/production.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.555555">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32978722">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-app-admin/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39593908">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

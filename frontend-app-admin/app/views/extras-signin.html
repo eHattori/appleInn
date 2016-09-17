@@ -4,29 +4,29 @@
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <form role="form" class="form-layout">
           <div class="text-center mb15">
-            <img data-ng-src="images/logo-dark.png" />
+            <img data-ng-src="images/temQuarto.png" class="img-responsive" />
           </div>
-
-          <p class="text-center mb30">Welcome to {{app.name}}. Please sign in to your account</p>
 
           <div class="form-inputs">
-            <input type="email" class="form-control input-lg" placeholder="Email Address">
-            <input type="password" class="form-control input-lg" placeholder="Password">
+            <input type="email" ng-model="email" class="form-control input-lg" placeholder="Email" />
+            <input type="password" ng-model="password" class="form-control input-lg" placeholder="Senha" />
           </div>
 
-          <button class="btn btn-success btn-block btn-lg mb15" type="submit" data-ng-click="submit()">
-            <span>Sign in</span>
+          <button class="btn btn-success btn-block btn-lg mb15"  ng-click="authenticate('login')" >
+            <span>Entrar</span>
           </button>
-
+          <button class="btn btn-primary btn-block btn-lg mb15"  ng-click="authenticate('facebook')">
+            <span>Entrar com o Facebook</span>
+          </button>
+          <button class="btn btn-danger btn-block btn-lg mb15"  ng-click="authenticate('google')">
+            <span>Entrar com o Google</span>
+          </button>
           <p>
-
-            <a ui-sref="user.signup">Create an account</a> ·
-            <a ui-sref="user.forgot">Forgot your password?</a>
-
+            <a ui-sref="user.signup">Crie uma conta</a> ·
+            <a ui-sref="user.forgot">Esqueceu sua senha?</a>
           </p>
         </form>
       </div>
     </div>
-
   </div>
 </div>

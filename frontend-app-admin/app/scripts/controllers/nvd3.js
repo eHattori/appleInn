@@ -339,5 +339,5 @@ function nvd3Ctrl($scope, COLORS) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('nvd3Ctrl', ['$scope', 'COLORS', nvd3Ctrl]);

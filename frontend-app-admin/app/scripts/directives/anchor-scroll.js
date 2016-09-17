@@ -17,7 +17,7 @@ function anchorScroll($anchorScroll, $location) {
   };
 }
 
-angular.module('urbanApp')
+angular.module('temQuartoApp')
 .run(['$anchorScroll', function($anchorScroll) {
   $anchorScroll.yOffset = 55;
 }])

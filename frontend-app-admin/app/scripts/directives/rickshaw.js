@@ -159,4 +159,4 @@ function rickshaw($compile, $window) {
   };
 }
 
-angular.module('urbanApp').directive('rickshaw', rickshaw);
+angular.module('temQuartoApp').directive('rickshaw', rickshaw);

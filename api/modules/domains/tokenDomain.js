@@ -7,12 +7,11 @@
 
 module.exports = function(app){
 
-    var client    = (app.modules.infra.elasticSearchInfra).getConnection();
-    var config    = require('config');
-    var log       = app.modules.infra.logInfra;
-    var moment    = require("moment");
-    var randtoken = require('rand-token');
-
+    var client       = (app.modules.infra.elasticSearchInfra).getConnection();
+    var config       = require('config');
+    var log          = app.modules.infra.logInfra;
+    var moment       = require("moment");
+    var cryptoHelper = app.modules.helpers.cryptoHelper;
 
     var tokenDomain = {
 
@@ -31,7 +30,7 @@ module.exports = function(app){
                 id : token,
                 body : {
                     token : token,
-                    userid : userid,
+                    user_id : userid,
                     data : moment().format("YYYY-MM-DD HH:mm:ss")
                 }
             }, function(err, response){
@@ -39,7 +38,14 @@ module.exports = function(app){
                     log.error(err);
                     callback(err, null);
                 } else {
-                    callback(null,response);
+
+                    var result = {
+                        user_id : userid,
+                        token  : token,
+                        data   : moment().format("YYYY-MM-DD HH:mm:ss")
+                    };
+
+                    callback(null,result);
                 }
 
             });
@@ -56,12 +62,13 @@ module.exports = function(app){
             client.getSource({
                 index : config.elasticsearch.index,
                 type  : config.elasticsearch.type,
-                id : token
+                id    : token
             }, function(err, response){
                 if(err){
                     log.error(err);
                     callback(err, null);
                 } else {
+
                     callback(null, response);
                 }
             });
@@ -92,8 +99,13 @@ module.exports = function(app){
          * @param userid
          * @param callback
          */
-        createToken : function(userid, callback){
-            this.setToken(userid, randtoken.generate(32), callback);
+        createToken : function(user, callback){
+            if(user){
+                user.data = moment().format("YYYY-MM-DD HH:mm:ss");
+                this.setToken(user.user_id, cryptoHelper.encrypt(user), callback);
+            } else {
+                callback("Invalid User");
+            }
         },
 
 
@@ -101,14 +113,19 @@ module.exports = function(app){
             var _this = this;
 
             try {
+
+                if(!token)
+                    throw "Invalid Token";
+
                 this.getInfoToken(token, function(err, res){
 
                     if(err){
-                        if(err.status)
-                            callback(null, { isValid : false});
-                        else{
+                        if(err.status == 404){
+                            err.displayName = "Token Not found"
+                            return callback(err);
+                        } else {
                             log.error(err);
-                            callback(err);
+                            return callback(err);
                         }
                     }
 
@@ -116,13 +133,20 @@ module.exports = function(app){
                     var then = moment(res.data);
                     var diff = now.diff(then,"seconds") / 60;
 
-                    if(diff >= 15){
-                        _this.deleteToken(token, function(err, data){
+                    if(diff >= (config.timeExpireSession ? config.timeExpireSession : 15)){
+
+                        var user = cryptoHelper.decrypt(token);
+                        _this.deleteToken(token, function(err){
                             if(err){
                                 log.error(err);
                                 callback(err);
                             }
-                            callback(null, { isValid : false });
+                            if(user)
+                                _this.createToken(user, function(err, tk){
+                                    callback(null, { isValid : true, token : tk });
+                                });
+                            else
+                                callback(null, { isValid : false, displayError : "Invalid User" });
                         });
                     } else {
                         callback(null, { isValid : true });
@@ -130,12 +154,12 @@ module.exports = function(app){
                 });
 
             } catch(e){
-                log.error(err);
+                log.error(e);
+                console.log(e);
                 callback(e);
             }
         }
     };
-
 
     return tokenDomain;
 };

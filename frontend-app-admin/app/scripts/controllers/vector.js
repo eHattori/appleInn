@@ -100,5 +100,5 @@ function vectormapCtrl($scope, COLORS) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('vectormapCtrl', ['$scope', 'COLORS', vectormapCtrl]);

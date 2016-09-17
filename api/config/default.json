@@ -7,10 +7,25 @@
     "host"     : "localhost",
     "port"     : 3306
   },
+  "timeExpireSession" : 1,
+  "crypt" : {
+    "secret"    : "<KEY_SECRETS_TOKEN>"
+  },
   "elasticsearch" : {
     "host" : "localhost:9200",
     "log"  : "error",
     "index": "userid",
     "type" : "usertype"
+  },
+  "facebook" : {
+    "accessTokenUrl" : "https://graph.facebook.com/v2.7/oauth/access_token",
+    "secrets" : "<SECRETS_FACEBoOK>",
+    "graphApiUrl" : "https://graph.facebook.com/v2.7/me?fields="
+  },
+  "google" : {
+    "tokenUrl" : "https://accounts.google.com/o/oauth2/token",
+    "apiUrl"   : "https://www.googleapis.com/plus/v1/people/me/openIdConnect",
+    "clientId" : "<CLIENT_ID_GOOGLE>",
+    "secrets"  : "<SECRETS_GOOGLE>"
   }
 }

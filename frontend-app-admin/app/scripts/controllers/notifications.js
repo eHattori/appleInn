@@ -61,5 +61,5 @@ function NotificationsCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('NotificationsCtrl', ['$scope', NotificationsCtrl]);

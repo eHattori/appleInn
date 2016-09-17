@@ -430,7 +430,7 @@ function DatepickerDemoCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('TypeaheadCtrl', ['$scope', '$http', TypeaheadCtrl])
   .controller('TimepickerDemoCtrl', ['$scope', '$log', TimepickerDemoCtrl])
   .controller('ModalDemoCtrl', ['$scope', '$modal', '$log', ModalDemoCtrl])

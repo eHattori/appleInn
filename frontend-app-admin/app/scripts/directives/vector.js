@@ -22,4 +22,4 @@ function vector() {
   };
 }
 
-angular.module('urbanApp').directive('vector', vector);
+angular.module('temQuartoApp').directive('vector', vector);

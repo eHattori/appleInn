@@ -16,4 +16,4 @@ function panelControlCollapse() {
   };
 }
 
-angular.module('urbanApp').directive('panelControlCollapse', panelControlCollapse);
+angular.module('temQuartoApp').directive('panelControlCollapse', panelControlCollapse);

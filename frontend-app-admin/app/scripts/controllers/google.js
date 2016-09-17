@@ -324,5 +324,5 @@ function mapCtrl($scope, COLORS) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('mapCtrl', ['$scope', 'COLORS', mapCtrl]);

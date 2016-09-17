@@ -46,5 +46,5 @@ function advancedFormCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('advancedFormCtrl', ['$scope', advancedFormCtrl]);

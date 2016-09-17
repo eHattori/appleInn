@@ -60,5 +60,5 @@ function wizardCtrl($scope) {
 }
 
 angular
-  .module('urbanApp')
+  .module('temQuartoApp')
   .controller('wizardCtrl', ['$scope', wizardCtrl]);
