@@ -9,7 +9,7 @@
   },
   "timeExpireSession" : 1,
   "crypt" : {
-    "secret"    : "<KEY_SECRETS_TOKEN>"
+    "secret"    : "123456"
   },
   "elasticsearch" : {
     "host" : "localhost:9200",
@@ -19,13 +19,13 @@
   },
   "facebook" : {
     "accessTokenUrl" : "https://graph.facebook.com/v2.7/oauth/access_token",
-    "secrets" : "<SECRETS_FACEBoOK>",
+    "secrets" : "b3b6c025e48ba9390c7a9ef3ed867bc8",
     "graphApiUrl" : "https://graph.facebook.com/v2.7/me?fields="
   },
   "google" : {
     "tokenUrl" : "https://accounts.google.com/o/oauth2/token",
     "apiUrl"   : "https://www.googleapis.com/plus/v1/people/me/openIdConnect",
-    "clientId" : "<CLIENT_ID_GOOGLE>",
-    "secrets"  : "<SECRETS_GOOGLE>"
+    "clientId" : "350731542027-u5civpmd3112k5tllci81e59gna48tt2.apps.googleusercontent.com",
+    "secrets"  : "4jeizdsFONd-SECIC1jQ5ssR"
   }
 }
